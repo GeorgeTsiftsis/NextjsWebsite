@@ -4,52 +4,60 @@ import classes from './MainNavigation.module.css';
 // import "./Navbarmobile.css";
 import { FaFacebook } from "react-icons/fa";
 
-
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FaInstagram } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 import Link from "next/link";
+import  {useRouter} from 'next/router';
+import { useState } from "react";
 // import classes from "./active.module.css";
 // import NavLinksItemsFun, { NavBarItems } from "./NavBarItems";
 
-class MainHeader extends Component {
-  state = { clicked: true };
+const MainHeader = () => {
 
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
+const [open, setOpen] = useState(true)
+    
+  const handleClick = () => {
+setOpen(setOpen=> setOpen= !setOpen)
   };
+ 
+ 
+  const router = useRouter;
 
-  render() {
+  
     return (
+        
         <>
       <header className= {classes.header}>
         <nav className={classes.navbar}>
           <div className={classes.brandtitle}>
             Μακεδονική Δύναμη Κοζάνης
-            <div className={classes.menu_icon} onClick={this.handleClick}>
-              <i> {this.state.clicked ? <FiMenu className={classes.fas}  /> : <FaTimes className={classes.fas} />}</i>
+            <div className={classes.menu_icon} onClick={handleClick}>
+              <i> {open ? <FiMenu className={classes.fas}  /> : <FaTimes className={classes.fas} />}</i>
               <h1 className={classes.menu_index_title}>Menu</h1>
               
             </div>
           </div>
 
           <div 
-          className={this.state.clicked ? `${classes.navbar_links}` : `${classes.navbar_links_active}`}
+          className={open ? `${classes.navbar_links}` : `${classes.navbar_links_active}`}
           >
              
             <ul className={classes.list_ul}>
               <li className={classes.list}>
-                <Link className={classes.list_a} 
+           <Link className={classes.list_a}
+                //  className={router.pathname === "/" ? $`{classes.active}` : ""}
                 // activeClassName={classes.activee} 
                 href="/">
                   Αρχική
                 </Link>
+               
               </li>
               <li className={classes.list}>
                 <Link className="list_a"
                 //  activeClassName={classes.activee} 
-                 href="/History">
+                 href="/History"  className={router.pathname == "/History" ? 'active' : ""}>
                   Ιστορια- Σύλλογος
                 </Link>
               </li>
@@ -59,6 +67,7 @@ class MainHeader extends Component {
                 </Link>
               </li>
               <li className={classes.list}>
+                  
                 <Link className="list_a" activeClassName={classes.activee} href="/Τμήματα">
                   Τμήματα
                 </Link>
@@ -69,6 +78,7 @@ class MainHeader extends Component {
                 </Link>
               </li>
     </ul>
+    
             {/* <NavLinksItemsFun NavBarItems={NavBarItems} /> */}
           </div>
           <div className={classes.socialmediacontainer}>
@@ -88,6 +98,6 @@ class MainHeader extends Component {
      </>
     );
   }
-}
+
 
 export default MainHeader;
