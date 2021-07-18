@@ -1,0 +1,23 @@
+.gridnews {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #6096ba;
+  column-gap: 2em;
+  padding: 2rem;
+  grid-gap: 2em;
+  padding-top: 4rem;
+}
+@media (max-width: 1200px) {
+  .gridnews {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .gridnews {
+    grid-template-columns: 1fr;
+    padding-top: 4rem;
+  }
+}

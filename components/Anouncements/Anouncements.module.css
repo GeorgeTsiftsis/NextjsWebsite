@@ -1,0 +1,74 @@
+.mini_outline {
+  display: flex;
+  flex-direction: column;
+  background-color: #6096ba;
+}
+.anouncements_title {
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  padding-top: 2rem;
+}
+.line {
+  border: 8px solid #ebebeb;
+  align-self: center;
+  width: 95px;
+  border-radius: 16px;
+}
+.single_box_of_anouncements {
+  border-radius: 3px;
+  max-width: 600px;
+  padding: 0;
+  color: #fff;
+}
+.photo1 {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(10px 10px 40px #000000);
+}
+.texts_of_anouncements {
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1rem;
+  padding-bottom: 0;
+  color: black;
+  background-color: white;
+  height: 13rem;
+  /* font-family: "Sorts Mill Goudy", serif; */
+  font-family: "Manrope", sans-serif;
+
+  font-weight: 400;
+  filter: drop-shadow(10px 10px 40px #000000);
+}
+.date_of_anouncements {
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: brown;
+}
+.backlink_more_info {
+  line-height: 1rem;
+  color: orange;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 30px;
+  left: 10px;
+}
+
+.description {
+  max-width: 500px;
+  justify-content: center;
+
+  justify-items: center;
+}
+@media (max-width: 575px) {
+  .description {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1285px) {
+  .texts_of_anouncements {
+    height: 14rem;
+  }
+}
