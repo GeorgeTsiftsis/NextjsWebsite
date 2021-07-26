@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 
-import LoadingSpinner from "../UI/LoadingSpinner"
+import LoadingSpinner from "../UI/LoadingSpinner";
 import Anouncement from "./Anouncement";
-import classes from './Card.module.css';
 
-// import classes from "./Card.module.css";
+import classes from "./Card.module.css";
 // import "bootstrap/dist/css/bootstrap.css";
 
 const Anouncements = () => {
@@ -66,7 +65,7 @@ const Anouncements = () => {
   const anouncemnetsList = anouncements
     .slice(0)
     .reverse()
-    .map((anouncement, index) => <Anouncement key={index} id={anouncement.id} date={anouncement.date} description={anouncement.description} readMore={anouncement.readMore} title={anouncement.title} photo={anouncement.photo} />);
+    .map((anouncement, index) => <Anouncement key={index} anouncement={anouncement} />);
 
   return (
     <section>

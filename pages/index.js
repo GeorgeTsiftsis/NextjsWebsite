@@ -1,10 +1,13 @@
-import Maininformations from '../components/maininfos/Maininformation';
-import Anouncements from '../components/Anouncements/Anouncements';
+import Maininformations from "../components/maininfos/Maininformation";
+import Anouncements from "../components/Anouncements/Anouncements";
 
 function HomePage() {
-  return <>
-  <Maininformations/>
-  <Anouncements/>
-</>}
+  return (
+    <>
+      <Maininformations />
+      <Anouncements />
+    </>
+  );
+}
 
 export default HomePage;

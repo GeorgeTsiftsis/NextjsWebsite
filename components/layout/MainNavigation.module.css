@@ -98,7 +98,7 @@ flex-wrap: wrap;
     background-color: white;
     border-radius: 10px;
   }
-  
+
   @media (min-width: 575px) {
     .fab {
       font-size: 2.3rem;
@@ -106,12 +106,6 @@ flex-wrap: wrap;
       padding: 0;
       margin: 0;
     }
-  }
-  
-  @media (min-width: 575px) {
-    /* .fab:hover { */
-      /* color: gold;} */
-    
   }
   @media (min-width: 575px) {
     .socialmediacontainer {
@@ -121,6 +115,14 @@ flex-wrap: wrap;
       width: 8rem;
     }
   }
+ 
+  
+  @media (min-width: 575px) {
+    /* .fab:hover { */
+      /* color: gold;} */
+    
+  }
+  
   
 @media (max-width: 575px) {
     /* .navbar_links {
@@ -194,8 +196,9 @@ flex-wrap: wrap;
       display: flex;
     }
     .socialmediacontainer {
-      display: none;
-    }
+        display: none;
+      }
+    
     .menu_index_title {
       font-size: 10px;
       color: #fff;
@@ -216,6 +219,11 @@ flex-wrap: wrap;
 }
 
   
+
+.header .active {
+    color:gold;
+    background-color: gold;
+}
 
   
 
