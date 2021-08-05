@@ -1,0 +1,14 @@
+.jpg {
+  float: right;
+}
+.text {
+  color: white;
+}
+.container {
+  /* background-color: black; */
+  /* background-color: #335f7d; */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

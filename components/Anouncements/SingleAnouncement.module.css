@@ -3,6 +3,10 @@
   flex-direction: column;
   background-color: #6096ba;
 }
+
+.woo {
+  background-color: #6096ba;
+}
 .anouncements_title {
   text-align: center;
   color: white;
@@ -17,21 +21,18 @@
   border-radius: 16px;
 }
 .single_box_of_anouncements {
-  border-radius: 3px;
+  /* border-radius: 3px; */
+  padding-top: 3rem;
   max-width: 600px;
-  padding: 0;
-  color: #fff;
+  margin: auto;
+  width: 100%;
+  max-width: 40rem;
 }
 .photo1 {
   height: 200px;
   width: 100%;
-  /* background-size: cover; */
-
   object-fit: cover;
   filter: drop-shadow(10px 10px 40px #000000);
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
 }
 .texts_of_anouncements {
   font-size: 1rem;

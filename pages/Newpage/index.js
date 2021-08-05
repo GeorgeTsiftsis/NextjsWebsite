@@ -1,26 +1,11 @@
-function NewPage({ anouncements }) {
-  console.log(anouncements);
+import Anouncements from "../../components/Anouncements/Anouncements";
+
+function NewPage() {
   return (
-    <ul>
-      {anouncements.map((anouncement) => (
-        <li>{anouncement.date}</li>
-      ))}
-    </ul>
+    <>
+      <Anouncements />
+    </>
   );
-}
-
-export async function getStaticProps() {
-  const res = await fetch("https://initialise-6d68a-default-rtdb.europe-west1.firebasedatabase.app/Todo.json");
-  const data = await res.json();
-
-  return {
-    props: {
-      anouncements: data.anouncements,
-      // ?? true | undefined
-    },
-    revalidate: 10,
-  };
-  // console.log(anouncements);
 }
 
 export default NewPage;

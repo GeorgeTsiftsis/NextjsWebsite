@@ -15,6 +15,7 @@ export default function Anouncement(props) {
         <div className={classes.texts_of_anouncements}>
           <p className={classes.date_of_anouncements}> {props.anouncement.date}</p>
           <p className={classes.description}> {props.anouncement.description}</p>
+
           <button onClick={showDetailsHandler} className={classes.backlink_more_info}>
             {props.anouncement.readMore}
           </button>

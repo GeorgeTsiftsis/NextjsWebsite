@@ -1,21 +1,3 @@
-.mini_outline {
-  display: flex;
-  flex-direction: column;
-  background-color: #6096ba;
-}
-.anouncements_title {
-  text-align: center;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
-  padding-top: 2rem;
-}
-.line {
-  border: 8px solid #ebebeb;
-  align-self: center;
-  width: 95px;
-  border-radius: 16px;
-}
 .single_box_of_anouncements {
   border-radius: 3px;
   max-width: 600px;
@@ -23,15 +5,10 @@
   color: #fff;
 }
 .photo1 {
-  height: 200px;
+  height: 500px;
   width: 100%;
-  /* background-size: cover; */
-
   object-fit: cover;
   filter: drop-shadow(10px 10px 40px #000000);
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
 }
 .texts_of_anouncements {
   font-size: 1rem;
@@ -40,7 +17,7 @@
   padding-bottom: 0;
   color: black;
   background-color: white;
-  height: 13rem;
+  height: 4rem;
   /* font-family: "Sorts Mill Goudy", serif; */
   font-family: "Manrope", sans-serif;
 

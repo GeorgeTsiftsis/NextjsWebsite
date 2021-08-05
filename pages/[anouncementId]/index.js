@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import Anouncement from "../../components/Anouncements/Anouncement";
+// import Anouncement from "../../components/Anouncements/Anouncement";
+import SingleAnouncement from "../../components/Anouncements/SingleAnouncement";
 import React from "react";
-import { useRouter } from "next/router";
 import firebase from "../../components/util/firebase";
 // improt firebaseService from "../../services/firebase-service";
 
@@ -49,7 +49,8 @@ export async function getStaticProps({ params }) {
 }
 
 function AnouncementDetails(props) {
-  return <Anouncement anouncement={props.anouncement} />;
+  return <SingleAnouncement anouncement={props.anouncement} />;
+  //  <Anouncement anouncement={props.anouncement}
 }
 
 export default AnouncementDetails;

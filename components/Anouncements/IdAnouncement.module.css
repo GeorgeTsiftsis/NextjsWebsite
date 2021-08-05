@@ -3,6 +3,20 @@
   flex-direction: column;
   background-color: #6096ba;
 }
+
+.woo {
+  background-color: white;
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  padding: 1rem 0rem 0rem 1rem;
+}
+
 .anouncements_title {
   text-align: center;
   color: white;
@@ -17,21 +31,22 @@
   border-radius: 16px;
 }
 .single_box_of_anouncements {
-  border-radius: 3px;
+  /* border-radius: 3px; */
+  padding-top: 3rem;
   max-width: 600px;
-  padding: 0;
-  color: #fff;
+  margin: auto;
+  width: 100%;
+  max-width: 40rem;
 }
 .photo1 {
-  height: 200px;
-  width: 100%;
-  /* background-size: cover; */
-
-  object-fit: cover;
-  filter: drop-shadow(10px 10px 40px #000000);
+  height: 450px;
+  align-self: center;
+  /* object-fit: cover; */
+  /* filter: drop-shadow(10px 10px 40px #000000); */
   /* display: block;
   margin-left: auto;
   margin-right: auto; */
+  /* width: 100%; */
 }
 .texts_of_anouncements {
   font-size: 1rem;
@@ -48,24 +63,20 @@
   filter: drop-shadow(10px 10px 40px #000000);
 }
 .date_of_anouncements {
-  font-size: 12px;
+  font-size: 20px;
   font-family: "Lato", sans-serif;
   color: brown;
-}
-.backlink_more_info {
-  line-height: 1rem;
-  color: orange;
-  font-size: 1rem;
-  position: fixed;
-  bottom: 30px;
-  left: 10px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 .description {
-  max-width: 500px;
-  justify-content: center;
-
-  justify-items: center;
+  /* max-width: 700px; */
+  /* justify-content: center; */
+  padding: 1rem;
+  font-size: 24px;
+  text-align: justify;
+  /* justify-items: center; */
 }
 @media (max-width: 575px) {
   .description {
