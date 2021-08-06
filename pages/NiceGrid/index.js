@@ -1,254 +1,70 @@
 import classes from "./styler.module.css";
-import { useState } from "react";
-function NiceGrid() {
-  const [isShowing, setIsShowing] = useState(true);
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
-  var zindex = 10;
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    setIsShowing((setIsShowing) => (setIsShowing = !setIsShowing));
-  };
-
+function footer() {
   return (
-    <section className={classes.sectionn}>
-      <div className={isShowing ? classes.cards : `${classes.cards} ${classes.showing}`}>
-        <div className={isShowing ? classes.card : `${classes.card} ${classes.show}`}>
-          <div className={`${classes.card__image_holder}`}>
-            <img className={classes.card__image} src="https://source.unsplash.com/300x225/?wave" alt="wave" />
-          </div>
-          <div className={`${classes.card_title}`}>
-            <a href="#" className={`${classes.toggle_info} ${classes.btn}`} onClick={handleClick}>
-              <span className={classes.left}></span>
-              <span className={classes.right}></span>
-            </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className={`${classes.card_flap} ${classes.flap1}`}>
-            <div className={classes.card_description}>This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className={`${classes.card_flap} ${classes.flap2}`}>
-              <div className={classes.card_actions}>
-                <a href="#" className={classes.btn}>
-                  Read more
-                </a>
-              </div>
+    <div className={classes.footer_dark}>
+      <footer>
+        <div className={classes.container}>
+          <div className={classes.row}>
+            <div className={`${classes.item} ${classes.text}`}>
+              <h3>Υπηρεσίες</h3>
+              <ul>
+                <li>
+                  <a href="#">Ταε-Κβον-Ντό</a>
+                </li>
+                <li>
+                  <a href="#">Μοντέρνος Χορός</a>
+                </li>
+                <li>
+                  <a href="#">Ελεύθερα Βάρη</a>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
+            <div className={`${classes.item} ${classes.text}`}>
+              <h3>Σχετικά με εμάς</h3>
+              <ul>
+                <li>
+                  <a href="#">Ιστορία-Σύλλογος</a>
+                </li>
+                <li>
+                  <a href="#">Τμήματα</a>
+                </li>
+                <li>
+                  <a href="#">Αρχική Σελίδα</a>
+                </li>
+              </ul>
+            </div>
 
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
-            </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
+            <div className={`${classes.item} ${classes.text}`}>
+              <h3>Επικοινωνία</h3>
+              <ul>
+                <li>
+                  <a href="#">Εστίας 3, Κοζάνη 50132</a>
+                </li>
+                <li>
+                  <a href="#">Τηλέφωνο +24610 25054</a>
+                </li>
+                <li>
+                  <a href="#">Email:macedonianforce@outlook.com</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?mountain" alt="mountain" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
+          <div className={classes.socialmediacontainer}>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100063686376902" style={{ padding: 5 }}>
+              <FaFacebook className={classes.fab} />
             </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?field" alt="field" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/macedonian_force/" style={{ padding: 5 }}>
+              <FaInstagram className={classes.fab} />
             </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
           </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
+          <p className={classes.copyright}>Μακεδονική Δύναμη Κοζάνης © 2021</p>
         </div>
-
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?water" alt="water" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
-            </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?river" alt="river" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
-            </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?kite" alt="kite" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
-            </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?underwater" alt="underwater" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
-            </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="card__image-holder">
-            <img className="card__image" src="https://source.unsplash.com/300x225/?desert" alt="desert" />
-          </div>
-          <div className="card-title">
-            <a href="#" className="toggle-info btn">
-              <span className="left"></span>
-              <span className="right"></span>
-            </a>
-            <h2>
-              Card title
-              <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div className="card-flap flap1">
-            <div className="card-description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
-            <div className="card-flap flap2">
-              <div className="card-actions">
-                <a href="#" className="btn">
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </footer>
+    </div>
   );
 }
 
-export default NiceGrid;
+export default footer;
