@@ -1,14 +1,10 @@
-.mini_outline {
-  display: flex;
-  flex-direction: column;
-  background-color: #6096ba;
+.SingleAnouncement {
+  max-width: 1000px;
 }
 
-.woo {
-  background-color: white;
-  margin: 4rem auto;
-  width: 100%;
-  max-width: 40rem;
+.divphoto {
+  border-left: none;
+  margin-bottom: 5rem;
 }
 
 .title {
@@ -24,67 +20,41 @@
   font-weight: 200;
   padding-top: 2rem;
 }
-.line {
-  border: 8px solid #ebebeb;
-  align-self: center;
-  width: 95px;
-  border-radius: 16px;
-}
-.single_box_of_anouncements {
-  /* border-radius: 3px; */
-  padding-top: 3rem;
-  max-width: 600px;
-  margin: auto;
-  width: 100%;
-  max-width: 40rem;
-}
-.photo1 {
-  height: 450px;
-  align-self: center;
-  /* object-fit: cover; */
-  /* filter: drop-shadow(10px 10px 40px #000000); */
-  /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
-  /* width: 100%; */
-}
-.texts_of_anouncements {
-  font-size: 1rem;
-  text-align: justify;
-  padding: 1rem;
-  padding-bottom: 0;
-  color: black;
-  background-color: white;
-  height: 13rem;
-  /* font-family: "Sorts Mill Goudy", serif; */
-  font-family: "Manrope", sans-serif;
 
-  font-weight: 400;
-  filter: drop-shadow(10px 10px 40px #000000);
+.photo {
+  float: left;
+  padding: 1rem;
+  height: auto;
+  width: 100%;
 }
+
 .date_of_anouncements {
   font-size: 20px;
   font-family: "Lato", sans-serif;
   color: brown;
-  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-left: 1.1rem;
   padding-bottom: 1rem;
 }
 
 .description {
-  /* max-width: 700px; */
-  /* justify-content: center; */
   padding: 1rem;
-  font-size: 24px;
+  font-size: 1.5rem;
+
+  max-width: 1200px;
   text-align: justify;
-  /* justify-items: center; */
 }
 @media (max-width: 575px) {
   .description {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-align: justify;
+
+    /* word-spacing: -2px; */
   }
-}
-@media (max-width: 1285px) {
-  .texts_of_anouncements {
-    height: 14rem;
+  .divphoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

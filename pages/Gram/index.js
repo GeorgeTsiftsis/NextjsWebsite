@@ -9,7 +9,7 @@ function Gram(props) {
 
 export default Gram;
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const athletes = [];
 
   await firebase

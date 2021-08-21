@@ -1,8 +1,9 @@
 import React from "react";
 import classes from "./Anouncements.module.css";
+
 import Link from "next/link";
 
-export default function AnouncementItem(props) {
+export default function OldAnouncementItem(props) {
   return (
     <section className={classes.single_box_of_anouncements} key={props.anouncement.id}>
       <img className={classes.photo1} src={props.anouncement.photo} alt="lorem"></img>

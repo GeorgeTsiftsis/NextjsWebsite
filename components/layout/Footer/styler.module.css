@@ -100,6 +100,9 @@
   color: white;
   opacity: 0.8;
 }
+.fab:hover {
+  opacity: 1;
+}
 
 .footer_dark .item.social > a:hover {
   opacity: 0.9;
@@ -111,4 +114,8 @@
   opacity: 0.3;
   font-size: 13px;
   margin-bottom: 0;
+}
+
+.location {
+  font-size: 0.9rem;
 }

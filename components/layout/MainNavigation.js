@@ -49,10 +49,10 @@ const MainHeader = () => {
               </li>
               <li className={classes.list}>
                 <Link
-                  className="list_a"
+                  // className="list_a"
                   //  activeClassName={classes.activee}
                   href="/History"
-                  className={router.pathname == "/History" ? "active" : ""}
+                  className={router.pathname == "/History" ? `${classes.list_a} ${classes.active}` : `${classes.list_a}`}
                 >
                   Ιστορια- Σύλλογος
                 </Link>
@@ -63,12 +63,12 @@ const MainHeader = () => {
                 </Link>
               </li>
               <li className={classes.list}>
-                <Link className="list_a" activeClassName={classes.activee} href="/Τμήματα">
+                <Link className="list_a" activeClassName={classes.activee} href="/Groups">
                   Τμήματα
                 </Link>
               </li>
               <li className={classes.list}>
-                <Link className="list_a" activeClassName={classes.activee} href="/Πληροφορίες">
+                <Link className="list_a" activeClassName={classes.activee} href="/Contact">
                   Επικοινωνία
                 </Link>
               </li>

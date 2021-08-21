@@ -1,5 +1,4 @@
 import classes from "./AthleteItem.module.css";
-import CountUp from "react-countup";
 
 function AthleteItem(props) {
   return (
@@ -7,7 +6,6 @@ function AthleteItem(props) {
       <img className={classes.photo1} src={props.athlete.photo} alt="lorem"></img>
       <div className={classes.texts_of_anouncements}>
         <p className={classes.description}>
-          {" "}
           {props.athlete.position}, {props.athlete.name}
         </p>
       </div>

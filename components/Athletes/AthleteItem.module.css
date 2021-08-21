@@ -24,24 +24,10 @@
   font-weight: 400;
   filter: drop-shadow(10px 10px 40px #000000);
 }
-.date_of_anouncements {
-  font-size: 12px;
-  font-family: "Lato", sans-serif;
-  color: brown;
-}
-.backlink_more_info {
-  line-height: 1rem;
-  color: orange;
-  font-size: 1rem;
-  position: fixed;
-  bottom: 30px;
-  left: 10px;
-}
 
 .description {
   max-width: 500px;
   justify-content: center;
-
   justify-items: center;
 }
 @media (max-width: 575px) {

@@ -1,15 +1,8 @@
-.App {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 .sectionn {
-  background: #dce1df;
+  background-color: #6096ba;
+
   color: #4f585e;
-  font-family: "Source Sans Pro", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
   text-rendering: optimizeLegibility;
 }
 a.btn {
@@ -37,7 +30,7 @@ a.btn:active {
   transition: all 0.025s 0s ease-out;
 }
 div.cards {
-  margin: 80px auto;
+  margin: 0 auto;
   max-width: 960px;
   text-align: center;
 }
@@ -98,7 +91,7 @@ div.card div.card_title a.toggle_info span.right {
   transform: rotate(-45deg);
 }
 div.card div.card_title h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.05em;
   margin: 0;
@@ -114,6 +107,7 @@ div.card div.card_description {
   padding: 0 15px 10px;
   position: relative;
   font-size: 14px;
+  text-align: justify;
 }
 div.card div.card_actions {
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);

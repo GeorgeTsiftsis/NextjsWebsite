@@ -1,21 +1,22 @@
 import { useState } from "react";
-import classes from "./style.module.css";
+import classes from "../../pages/Staff/style.module.css";
+import { useRouter } from "next/router";
 
-function NiceGridd() {
+function StaffList(props) {
   const [isShowing, setIsShowing] = useState(true);
   const [is2Showing, set2IsShowing] = useState(false);
 
   const [appState, changeState] = useState({
     activeObject: null,
-    objects: [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }],
+    objects: [props.staffMembers[0], props.staffMembers[1], props.staffMembers[2], props.staffMembers[3], props.staffMembers[4]],
   });
 
-  function toggleActive(index) {
-    // isShowing(false);
-    // set2IsShowing((set2IsShowing) => (set2IsShowing = !set2IsShowing));
+  console.log(props.staffMembers[0].id);
 
+  function toggleActive(index) {
     changeState({ ...appState, activeObject: appState.objects[index] });
   }
+  console.log(props.staffMembers.id);
 
   const handleClick = (e) => {
     var zindex = 10;
@@ -23,28 +24,22 @@ function NiceGridd() {
     setIsShowing((setIsShowing) => (setIsShowing = !setIsShowing), { Zindex: zindex }, zindex++);
     set2IsShowing((set2IsShowing) => (set2IsShowing = !set2IsShowing), { Zindex: zindex }, zindex++);
   };
-
   function toggleActiveStyles(index) {
     if (appState.objects[index] === appState.activeObject && is2Showing) {
       return `${classes.card} ${classes.show}`;
     } else {
       return `${classes.card}`;
     }
-    // set2IsShowing((set2IsShowing) => (set2IsShowing = !set2IsShowing));
   }
 
-  //   function toggleCardStyles(index) {
-  //     if (appState.objects[index] === appState.activeObject) {
-  //       return `${classes.cards} ${classes.showing}`;
-  //     } else {
-  //       return `${classes.cards}`;
-  //     }
-  //   }
-
-  return (
+  const router = useRouter();
+  function showDetailsHandler() {
+    router.push("Staff/" + appState.activeObject.id);
+  }
+  const staffList = (
     <section className={classes.sectionn}>
       <div className={isShowing ? `${classes.cards}` : `${classes.cards} ${classes.showing}`}>
-        {appState.objects.map((elements, index) => (
+        {appState.objects.map((element, index, props) => (
           <div
             key={index}
             className={toggleActiveStyles(index)}
@@ -53,7 +48,7 @@ function NiceGridd() {
             }}
           >
             <div className={`${classes.card__image_holder}`}>
-              <img className={classes.card__image} src="https://source.unsplash.com/300x225/?wave" alt="wave" />
+              <img className={classes.card__image} src={element.photo} alt="wave" />
             </div>
             <div className={`${classes.card_title}`}>
               <a href="#" className={`${classes.toggle_info} ${classes.btn}`} onClick={handleClick}>
@@ -61,15 +56,15 @@ function NiceGridd() {
                 <span className={classes.right}></span>
               </a>
               <h2>
-                Card title
-                <small>Image from unsplash.com</small>
+                {element.name}
+                <small>{element.role}</small>
               </h2>
             </div>
             <div className={`${classes.card_flap} ${classes.flap1}`}>
-              <div className={classes.card_description}>This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.</div>
+              <div className={classes.card_description}>{element.description}</div>
               <div className={`${classes.card_flap} ${classes.flap2}`}>
                 <div className={classes.card_actions}>
-                  <a href="#" className={classes.btn}>
+                  <a className={classes.btn} onClick={showDetailsHandler}>
                     Read more
                   </a>
                 </div>
@@ -80,6 +75,10 @@ function NiceGridd() {
       </div>
     </section>
   );
+  return (
+    <>
+      <div>{staffList}</div>
+    </>
+  );
 }
-
-export default NiceGridd;
+export default StaffList;

@@ -2,6 +2,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import { useState } from "react";
 import classes from "./counter.module.css";
+// import Mycounter from "./layoutfornod";
 
 export default function Counter() {
   const [gre, setGre] = useState(false);
@@ -9,6 +10,7 @@ export default function Counter() {
   const [glo, setGlo] = useState(false);
 
   return (
+    // <Mycounter>
     <section className={classes.container}>
       <div className={classes.minicontainer}>
         <CountUp start={gre ? 0 : null} end={120} duration={1} redraw={true}>
@@ -61,6 +63,7 @@ export default function Counter() {
         </CountUp>
       </div>
     </section>
+    // </Mycounter>
   );
 }
 

@@ -9,16 +9,28 @@
   color: white;
   font-weight: 200;
   text-align: center;
-  /* font-family: "Manrope", sans-serif; */
-
   letter-spacing: -0.125rem;
 }
 
 .line {
-  /* border: 8px solid #ebebeb; */
   align-self: center;
-  /* width: 95px; */
   border-radius: 16px;
   border: 1px solid #ebebeb;
   width: 60%;
+}
+
+.container_details_contact {
+  background-color: #6096ba;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+}
+.text_details {
+  font-size: 1rem;
+  text-align: justify;
+  max-width: 700px;
+  font-weight: 300;
+  font-family: "Manrope", sans-serif;
 }

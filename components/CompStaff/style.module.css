@@ -1,0 +1,44 @@
+.container_biography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: "Manrope", sans-serif;
+  /* background-color: #97d0ee; */
+  /* background-color: #7fabc7; */
+  background-color: white;
+  color: black;
+}
+
+.leftcol {
+  width: 50%;
+  align-self: start;
+  max-width: 600px;
+  opacity: 0.8;
+}
+.rightcol {
+  align-self: center;
+  width: 50%;
+  max-width: 600px;
+}
+.photo {
+  height: 400px;
+  border: 10px solid #f0f0f0;
+  border-right: none;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.role {
+  color: brown;
+  font-size: 20px;
+  padding: 1rem 0;
+}
+
+.description {
+  text-align: justify;
+  padding-right: 1rem;
+}

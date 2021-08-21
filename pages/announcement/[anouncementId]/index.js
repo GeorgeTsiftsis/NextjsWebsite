@@ -1,22 +1,14 @@
-import { Fragment } from "react";
-// import Anouncement from "../../components/Anouncements/Anouncement";
-import SingleAnouncement from "../../components/Anouncements/SingleAnouncement";
+import SingleAnouncement from "../../../components/Anouncements/SingleAnouncement";
 import React from "react";
-import firebase from "../../components/util/firebase";
-// improt firebaseService from "../../services/firebase-service";
+import firebase from "../../../components/util/firebase";
+import OldAnouncementList from "../../../components/Anouncements/OldAnouncementList";
 
 export async function getStaticPaths() {
   const paths = [];
 
-  // func getAnnouncements(numberOfAnnouncements) {
-
-  // }
-
   await firebase
     .database()
     .ref("Todo")
-    // .orderByChild("date")
-    // .limitToFirst(numberOfAnnouncements)
     .once("value", (snapshot) => {
       snapshot.forEach((child) => {
         const path = {
@@ -34,23 +26,38 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   let anouncement;
+  let anouncements = [];
   await firebase
     .database()
     .ref("Todo/" + params.anouncementId)
     .once("value", (snapshot) => {
       anouncement = snapshot.val();
     });
+  await firebase
+    .database()
+    .ref("Todo")
+    .limitToFirst(3)
+    .once("value", (snapshot) => {
+      snapshot.forEach((child) => {
+        anouncements.push(child.val());
+      });
+    });
 
   return {
     props: {
       anouncement,
+      anouncements,
     },
   };
 }
 
 function AnouncementDetails(props) {
-  return <SingleAnouncement anouncement={props.anouncement} />;
-  //  <Anouncement anouncement={props.anouncement}
+  return (
+    <div style={{ display: "flex", justifyItems: "center", alignItems: "center", flexDirection: "column" }}>
+      <SingleAnouncement anouncement={props.anouncement} />
+      <OldAnouncementList anouncements={props.anouncements} />
+    </div>
+  );
 }
 
 export default AnouncementDetails;

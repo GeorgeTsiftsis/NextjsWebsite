@@ -1,36 +1,29 @@
-import classes from "./staff.module.css";
 import Horizontal2Line from "../../components/HorizontalLine/Horizontal2Line";
-function Staff() {
-  return (
-    <section className={classes.section}>
-      <Horizontal2Line />
-      <div className={classes.container}>
-        <div className={classes.minicont}>
-          <img className={classes.photo} src="xristosalmasidis.jpg"></img>
-          <h1 className={classes.text}> Αλμασίδης Χρήστος</h1>
-          {/* <p className={classes.titlee}>Προπονητής Αγωνιστικής Ομάδας</p> */}
-        </div>
-        <div className={classes.minicont}>
-          <img className={classes.photo} src="xristosalmasidis.jpg"></img>
-          <h1 className={classes.text}> Αλμασίδης Χρήστος</h1>
-        </div>
-        <div className={classes.minicont}>
-          <img className={classes.photo} src="xristosalmasidis.jpg"></img>
-          <h1 className={classes.text}> Αλμασίδης Χρήστος</h1>
-        </div>
-        <div className={classes.minicont}>
-          <img className={classes.photo} src="xristosalmasidis.jpg"></img>
-          <h1 className={classes.text}> Αλμασίδης Χρήστος</h1>
-        </div>
-        <div className={classes.minicont}>
-          <img className={classes.photo} src="xristosalmasidis.jpg"></img>
-          <h1 className={classes.text}> Αλμασίδης Χρήστος</h1>
-        </div>
-      </div>
+import firebase from "../../components/util/firebase";
+import StaffList from "../../components/CompStaff/StaffList";
 
-      {/* <div className={classes.justtoleave}> </div> */}
+function Staff(props) {
+  return (
+    <section>
+      <Horizontal2Line />
+      <StaffList staffMembers={props.staffMembers} key={props.id} />
     </section>
   );
 }
-
 export default Staff;
+
+export async function getStaticProps(context) {
+  const staffMembers = [];
+
+  await firebase
+    .database()
+    .ref("Staffs")
+    .once("value", (snapshot) => {
+      snapshot.forEach((child) => {
+        staffMembers.push(child.val());
+      });
+    });
+  return {
+    props: { staffMembers },
+  };
+}
