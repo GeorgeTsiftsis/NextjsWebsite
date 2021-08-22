@@ -1,13 +1,13 @@
 // import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 // import "./Navbarmobile.css";
-import { FaFacebook } from "react-icons/fa";
+
 import { AnimateSharedLayout, motion } from "framer-motion";
 import OwnImage from "./Image";
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FaInstagram } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
-// import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 // import classes from "./active.module.css";
