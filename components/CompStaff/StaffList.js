@@ -51,7 +51,7 @@ function StaffList(props) {
               <img className={classes.card__image} src={element.photo} alt="wave" />
             </div>
             <div className={`${classes.card_title}`}>
-              <a href="#" className={`${classes.toggle_info} ${classes.btn}`} onClick={handleClick}>
+              <a passHref href="#" className={`${classes.toggle_info} ${classes.btn}`} onClick={handleClick}>
                 <span className={classes.left}></span>
                 <span className={classes.right}></span>
               </a>

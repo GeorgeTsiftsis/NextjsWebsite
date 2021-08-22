@@ -1,10 +1,13 @@
 import classes from "./Whatis.module.css";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Image from "next/image";
+import apostolistelikostoglou from "../../public/homeapostolis(1).jpg";
+
 function Whatis() {
   const router = useRouter();
   function showDetailsHandler() {
-    router.push("/" + "whatistaekwondo");
+    router.push("/" + "Whatistaekwondo");
   }
   const [gre, setGre] = useState(false);
 
@@ -16,8 +19,7 @@ function Whatis() {
           <a onClick={showDetailsHandler}></a>
         </span>
       </div>
-
-      <img className={classes.img} src="homeapostolis(1).jpg" />
+      <Image className={classes.photo} src={apostolistelikostoglou} alt="apostolistelikostoglou"></Image>{" "}
     </section>
   );
 }
