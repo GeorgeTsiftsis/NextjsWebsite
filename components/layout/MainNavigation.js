@@ -7,9 +7,8 @@ import OwnImage from "./Image";
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FaInstagram } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
-import { FaTimes } from "react-icons/fa";
+// import { FaTimes } from "react-icons/fa";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState } from "react";
 // import classes from "./active.module.css";
 // import NavLinksItemsFun, { NavBarItems } from "./NavBarItems";
