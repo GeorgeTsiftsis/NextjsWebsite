@@ -1,8 +1,6 @@
 import classes from "./styler.module.css";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
-import { FaPhoneAlt } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/Ai";
 import Link from "next/link";
 function Footer() {
