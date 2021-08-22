@@ -4,16 +4,22 @@ import MainInformation from "../components/maininfos/Maininformation";
 import Counter from "../components/Counter/counter";
 import Whatis from "../components/WhatisTkd/Whatis";
 // import FormforContact from "../components/FormforContact/FormforConract";
+import { motion } from "framer-motion";
 
+const variants = {
+  hidden: { opacity: 0, x: -200, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 function Homepage(props) {
   return (
-    <section>
+    <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
       <MainInformation />
       <Counter />
       <AnouncementList anouncements={props.anouncements} />
       <Whatis />
       {/* <FormforContact /> */}
-    </section>
+    </motion.section>
   );
 }
 

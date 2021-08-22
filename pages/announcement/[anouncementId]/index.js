@@ -2,6 +2,13 @@ import SingleAnouncement from "../../../components/Anouncements/SingleAnouncemen
 import React from "react";
 import firebase from "../../../components/util/firebase";
 import OldAnouncementList from "../../../components/Anouncements/OldAnouncementList";
+import { motion } from "framer-motion";
+
+const variants = {
+  hidden: { opacity: 0, x: -200, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
 
 export async function getStaticPaths() {
   const paths = [];
@@ -53,10 +60,12 @@ export async function getStaticProps({ params }) {
 
 function AnouncementDetails(props) {
   return (
-    <div style={{ display: "flex", justifyItems: "center", alignItems: "center", flexDirection: "column" }}>
-      <SingleAnouncement anouncement={props.anouncement} />
-      <OldAnouncementList anouncements={props.anouncements} />
-    </div>
+    <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
+      <div style={{ display: "flex", justifyItems: "center", alignItems: "center", flexDirection: "column" }}>
+        <SingleAnouncement anouncement={props.anouncement} />
+        <OldAnouncementList anouncements={props.anouncements} />
+      </div>
+    </motion.section>
   );
 }
 

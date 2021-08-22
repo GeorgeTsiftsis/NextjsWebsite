@@ -193,10 +193,11 @@
   background-color: gold;
   padding: 20px;
 }
-.list_a {
-  background-color: gold;
-  padding: 30px;
+
+.vroom {
+  color: blue;
 }
-.header .list_a {
-  background: gold;
+.active {
+  background-color: gold;
+  color: gold;
 }

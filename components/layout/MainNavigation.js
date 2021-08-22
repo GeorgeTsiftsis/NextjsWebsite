@@ -4,6 +4,7 @@ import classes from "./MainNavigation.module.css";
 // import "./Navbarmobile.css";
 import { FaFacebook } from "react-icons/fa";
 
+import OwnImage from "./Image";
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FaInstagram } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
@@ -22,6 +23,13 @@ const MainHeader = () => {
   };
 
   const router = useRouter;
+  const active = {
+    color: "gold",
+    height: "400px",
+  };
+  const inactive = {
+    color: "red",
+  };
 
   return (
     <>
@@ -39,38 +47,26 @@ const MainHeader = () => {
             <ul className={classes.list_ul}>
               <li className={classes.list}>
                 <Link
-                  className={classes.list_a}
                   //  className={router.pathname === "/" ? $`{classes.active}` : ""}
-                  // activeClassName={classes.activee}
+                  activeClassName="active"
                   href="/"
                 >
                   Αρχική
                 </Link>
               </li>
-              <li className={classes.list}>
-                <Link
-                  // className="list_a"
-                  //  activeClassName={classes.activee}
-                  href="/History"
-                  className={router.pathname == "/History" ? `${classes.list_a} ${classes.active}` : `${classes.list_a}`}
-                >
-                  Ιστορια- Σύλλογος
-                </Link>
+              <li className={router.pathname == "/History" ? `${classes.active}` : ""}>
+                <Link href="/History">Ιστορια- Σύλλογος</Link>
               </li>
               <li className={classes.list}>
-                <Link className="list_a" activeClassName={classes.activee} href="/Staff">
+                <Link className={classes.boi} href="/Staff">
                   Προσωπικό
                 </Link>
               </li>
               <li className={classes.list}>
-                <Link className="list_a" activeClassName={classes.activee} href="/Groups">
-                  Τμήματα
-                </Link>
+                <Link href="/Groups">Τμήματα</Link>
               </li>
               <li className={classes.list}>
-                <Link className="list_a" activeClassName={classes.activee} href="/Contact">
-                  Επικοινωνία
-                </Link>
+                <Link href="/Contact">Επικοινωνία</Link>
               </li>
             </ul>
 
@@ -86,9 +82,7 @@ const MainHeader = () => {
           </div>
         </nav>
       </header>
-      <div className={classes.livebox}>
-        <img src="makdin.jpg" alt="makedoniki-dinami-logo"></img>
-      </div>
+      <OwnImage src="/makdin.jpg" layout="fill" alt="makedoniki-dinami-logo"></OwnImage>
     </>
   );
 };

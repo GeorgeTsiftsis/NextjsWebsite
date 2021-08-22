@@ -1,12 +1,12 @@
 // import classes from "./Mainpage.module.css";
 import classes from "./Maininformation.module.css";
 
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 const Introduction = (props) => {
-    const router = useRouter()
+  const router = useRouter();
   const addInfoHnadler = () => {
-    router.push('/History');
+    router.push("/History");
   };
   return (
     <div className={classes.bigdiv}>
