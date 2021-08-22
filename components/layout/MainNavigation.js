@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import classes from "./MainNavigation.module.css";
 // import "./Navbarmobile.css";
 import { FaFacebook } from "react-icons/fa";
-
+import { AnimateSharedLayout, motion } from "framer-motion";
 import OwnImage from "./Image";
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FaInstagram } from "react-icons/fa";
@@ -15,20 +15,34 @@ import { useState } from "react";
 // import classes from "./active.module.css";
 // import NavLinksItemsFun, { NavBarItems } from "./NavBarItems";
 
+const links = [
+  {
+    name: "Αρχίκη",
+    href: "/",
+  },
+  {
+    name: "Σύλλογος Ιστορία",
+    href: "/History",
+  },
+  {
+    name: "Πρόσωπικο",
+    href: "/Staff",
+  },
+  {
+    name: "Τμήματα",
+    href: "/Groups",
+  },
+  {
+    name: "Επικοινωνία",
+    href: "/Contact",
+  },
+];
+
 const MainHeader = () => {
   const [open, setOpen] = useState(true);
 
   const handleClick = () => {
     setOpen((setOpen) => (setOpen = !setOpen));
-  };
-
-  const router = useRouter;
-  const active = {
-    color: "gold",
-    height: "400px",
-  };
-  const inactive = {
-    color: "red",
   };
 
   return (
@@ -45,29 +59,13 @@ const MainHeader = () => {
 
           <div className={open ? `${classes.navbar_links}` : `${classes.navbar_links_active}`}>
             <ul className={classes.list_ul}>
-              <li className={classes.list}>
-                <Link
-                  //  className={router.pathname === "/" ? $`{classes.active}` : ""}
-                  activeClassName="active"
-                  href="/"
-                >
-                  Αρχική
-                </Link>
-              </li>
-              <li className={router.pathname == "/History" ? `${classes.active}` : ""}>
-                <Link href="/History">Ιστορια- Σύλλογος</Link>
-              </li>
-              <li className={classes.list}>
-                <Link className={classes.boi} href="/Staff">
-                  Προσωπικό
-                </Link>
-              </li>
-              <li className={classes.list}>
-                <Link href="/Groups">Τμήματα</Link>
-              </li>
-              <li className={classes.list}>
-                <Link href="/Contact">Επικοινωνία</Link>
-              </li>
+              {links.map(({ name, href }) => (
+                <li className={classes.list}>
+                  <Link key={name} href={href}>
+                    <a>{name}</a>
+                  </Link>
+                </li>
+              ))}
             </ul>
 
             {/* <NavLinksItemsFun NavBarItems={NavBarItems} /> */}
