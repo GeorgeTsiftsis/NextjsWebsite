@@ -57,7 +57,7 @@ import FormforContact from "../../components/FormforContact/FormforConract";
 // const defaultCenter = { lat: 40.3006998281867, lng: 21.78543607992064 };
 // const containerStyle = {
 //   width: "100%",
-//   height: "580px",
+//   height: "580px"
 //   padding: "1rem",
 // };
 
