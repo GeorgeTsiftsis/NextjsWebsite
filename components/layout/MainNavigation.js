@@ -19,22 +19,27 @@ const links = [
   {
     name: "Αρχίκη",
     href: "/",
+    key: "1",
   },
   {
     name: "Σύλλογος Ιστορία",
     href: "/History",
+    key: "2",
   },
   {
     name: "Πρόσωπικο",
     href: "/Staff",
+    key: "3",
   },
   {
     name: "Τμήματα",
     href: "/Groups",
+    key: "4",
   },
   {
     name: "Επικοινωνία",
     href: "/Contact",
+    key: "5",
   },
 ];
 
@@ -59,9 +64,9 @@ const MainHeader = () => {
 
           <div className={open ? `${classes.navbar_links}` : `${classes.navbar_links_active}`}>
             <ul className={classes.list_ul}>
-              {links.map(({ name, href }) => (
-                <li className={classes.list}>
-                  <Link key={name} href={href}>
+              {links.map(({ name, index, href }) => (
+                <li key={name} className={classes.list}>
+                  <Link passHref href={href}>
                     <a>{name}</a>
                   </Link>
                 </li>
@@ -71,7 +76,7 @@ const MainHeader = () => {
             {/* <NavLinksItemsFun NavBarItems={NavBarItems} /> */}
           </div>
           <div className={classes.socialmediacontainer}>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100063686376902" style={{ padding: 5 }}>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100063686376902" style={{ padding: 5 }}>
               <FaFacebook className={classes.fab} />
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/macedonian_force/" style={{ padding: 5 }}>
