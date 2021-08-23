@@ -2,15 +2,11 @@ import React, { Component } from "react";
 // import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 // import "./Navbarmobile.css";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTimes } from "react-icons/fa";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import OwnImage from "./Image";
-// import { fab } from '@fortawesome/free-brands-svg-icons'
-import { FaInstagram } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
-import { FaTimes } from "react-icons/fa";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState } from "react";
 // import classes from "./active.module.css";
 // import NavLinksItemsFun, { NavBarItems } from "./NavBarItems";
@@ -60,8 +56,8 @@ const MainHeader = () => {
           <div className={open ? `${classes.navbar_links}` : `${classes.navbar_links_active}`}>
             <ul className={classes.list_ul}>
               {links.map(({ name, href }) => (
-                <li className={classes.list}>
-                  <Link key={name} href={href}>
+                <li key={name} className={classes.list}>
+                  <Link passHref href={href}>
                     <a>{name}</a>
                   </Link>
                 </li>
@@ -71,7 +67,7 @@ const MainHeader = () => {
             {/* <NavLinksItemsFun NavBarItems={NavBarItems} /> */}
           </div>
           <div className={classes.socialmediacontainer}>
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100063686376902" style={{ padding: 5 }}>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100063686376902" style={{ padding: 5 }}>
               <FaFacebook className={classes.fab} />
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/macedonian_force/" style={{ padding: 5 }}>
