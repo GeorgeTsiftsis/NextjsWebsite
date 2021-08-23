@@ -6,7 +6,7 @@ import apostolistelikostoglou from "../../public/whatistkd.jpg";
 function Whatis() {
   const router = useRouter();
   function showDetailsHandler() {
-    router.push("/" + "Whatistaekwondo");
+    router.push("/Whatistaekwondo");
   }
   const [gre, setGre] = useState(false);
 
