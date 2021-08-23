@@ -1,7 +1,6 @@
 import classes from "./style.module.css";
 
 function SingleDetail(props) {
-  console.log(props.object.name);
   return (
     <section className={classes.container_biography}>
       <div className={classes.leftcol}>
