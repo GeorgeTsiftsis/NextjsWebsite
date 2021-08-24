@@ -3,6 +3,7 @@ import firebase from "../components/util/firebase";
 import MainInformation from "../components/maininfos/Maininformation";
 import Counter from "../components/Counter/counter";
 import Whatis from "../components/WhatisTkd/Whatis";
+import Head from "next/head";
 // import FormforContact from "../components/FormforContact/FormforConract";
 import { motion } from "framer-motion";
 
@@ -13,13 +14,19 @@ const variants = {
 };
 function Homepage(props) {
   return (
-    <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-      <MainInformation />
-      <Counter />
-      <AnouncementList anouncements={props.anouncements} />
-      <Whatis />
-      {/* <FormforContact /> */}
-    </motion.section>
+    <>
+      <Head>
+        <title>Μακεδονική Δύναμη Κόζάνης Τάε-κβον-ντο</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+      </Head>
+      <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
+        <MainInformation />
+        <Counter />
+        <AnouncementList anouncements={props.anouncements} />
+        <Whatis />
+        {/* <FormforContact /> */}
+      </motion.section>
+    </>
   );
 }
 
