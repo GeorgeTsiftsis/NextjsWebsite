@@ -42,3 +42,23 @@
   text-align: justify;
   padding-right: 1rem;
 }
+@media (max-width: 575px) {
+  .container_biography {
+    flex-direction: column-reverse;
+  }
+  .rightcol {
+    width: 100%;
+    align-self: center;
+  }
+  .photo {
+    width: auto;
+    height: 330px;
+    align-self: center;
+  }
+  .leftcol {
+    width: 100%;
+  }
+  .description {
+    max-width: 350px;
+  }
+}

@@ -45,8 +45,8 @@ const MainHeader = () => {
     <>
       <header className={classes.header}>
         <nav className={classes.navbar}>
-          <div className={classes.brandtitle}>
-            Μακεδονική Δύναμη Κοζάνης
+          <div className={classes.lala}>
+            <h1 className={classes.brandtitle}> Μακεδονική Δύναμη Κοζάνης </h1>
             <div className={classes.menu_icon} onClick={handleClick}>
               <i> {open ? <FiMenu className={classes.fas} /> : <FaTimes className={classes.fas} />}</i>
               <h1 className={classes.menu_index_title}>Menu</h1>

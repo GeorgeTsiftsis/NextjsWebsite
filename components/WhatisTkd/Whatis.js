@@ -1,14 +1,12 @@
 import classes from "./Whatis.module.css";
 import { useRouter } from "next/router";
-import { useState } from "react";
 import Image from "next/image";
 import apostolistelikostoglou from "../../public/whatistkd.jpg";
 function Whatis() {
   const router = useRouter();
   function showDetailsHandler() {
-    router.push("/Whatistaekwondo");
+    router.push("/WhatIsTkd/1");
   }
-  const [gre, setGre] = useState(false);
 
   return (
     <section className={classes.container}>

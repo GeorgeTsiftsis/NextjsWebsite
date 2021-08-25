@@ -29,7 +29,6 @@ function Homepage(props) {
     </>
   );
 }
-
 export default Homepage;
 
 export async function getServerSideProps(context) {

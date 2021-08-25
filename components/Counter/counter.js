@@ -1,6 +1,6 @@
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classes from "./counter.module.css";
 // import Mycounter from "./layoutfornod";
 
@@ -8,6 +8,8 @@ export default function Counter() {
   const [gre, setGre] = useState(false);
   const [eur, setEur] = useState(false);
   const [glo, setGlo] = useState(false);
+
+  useEffect(() => {}, [gre, eur, glo]);
 
   return (
     // <Mycounter>
@@ -18,6 +20,8 @@ export default function Counter() {
             <div className={classes.containerfornumbera}>
               <span className={classes.number} ref={countUpRef} />
               <VisibilitySensor
+                partialVisibility
+                offset={{ top: 10 }}
                 onChange={(isVisible) => {
                   if (isVisible) {
                     setGre(true);
@@ -34,6 +38,8 @@ export default function Counter() {
             <div className={classes.containerfornumbera}>
               <span className={classes.number} ref={countUpRef} />
               <VisibilitySensor
+                partialVisibility
+                offset={{ top: 10 }}
                 onChange={(isVisible) => {
                   if (isVisible) {
                     setEur(true);
@@ -50,6 +56,8 @@ export default function Counter() {
             <div className={classes.containerfornumbera}>
               <span className={classes.number} ref={countUpRef} />
               <VisibilitySensor
+                partialVisibility
+                offset={{ top: 10 }}
                 onChange={(isVisible) => {
                   if (isVisible) {
                     setGlo(true);

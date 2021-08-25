@@ -18,6 +18,7 @@
 }
 .brandtitle {
   font-size: 1.5rem;
+  font-weight: 500;
   background-color: #6096ba;
   margin: 0.5rem;
 }
@@ -62,12 +63,13 @@
 }
 
 .menu_icon {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
+  /* position: absolute; */
+  /* top: 1.5rem;
+  right: 2rem; */
   display: none;
-  flex-direction: column;
-  justify-content: space-around;
+  align-self: flex-end;
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
   width: 35px;
   height: 23px;
   background-color: #6096ba;
@@ -86,12 +88,18 @@
     padding: 0;
     margin: 0;
   }
+  .lala {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .socialmediacontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 8rem;
+    margin-top: 5px;
   }
 }
 
@@ -101,13 +109,13 @@
       margin: 0.5rem;
     } */
   .brandtitle {
-    font-size: 1.2rem;
-
+    font-size: 1rem;
+    white-space: pre-wrap;
+    font-weight: 500;
     margin-bottom: 17px;
 
-    /* width: 550px; */
     text-align: left;
-    width: 300px;
+    width: 280px;
   }
   .navbar {
     padding-bottom: 1.5rem;
@@ -128,6 +136,7 @@
     font-size: 0.3rem;
     text-align: center;
     cursor: pointer;
+    align-self: flex-end;
   }
 
   .navbar_links {
@@ -152,7 +161,7 @@
 
   .header a {
     padding: 1rem 5rem;
-    font-size: 25px;
+    font-size: 23px;
     padding: 0px 60px 5px 60px;
     background-color: #4f80a0;
     width: 100%;
