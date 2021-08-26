@@ -3,11 +3,12 @@ import React, { Component } from "react";
 import classes from "./MainNavigation.module.css";
 // import "./Navbarmobile.css";
 import { FaFacebook, FaInstagram, FaTimes } from "react-icons/fa";
-import { AnimateSharedLayout, motion } from "framer-motion";
+// import { AnimateSharedLayout, motion } from "framer-motion";
 import OwnImage from "./Image";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import { useState } from "react";
+// import { motion } from "framer-motion";
 // import classes from "./active.module.css";
 // import NavLinksItemsFun, { NavBarItems } from "./NavBarItems";
 
@@ -58,7 +59,7 @@ const MainHeader = () => {
               {links.map(({ name, href }) => (
                 <li key={name} className={classes.list}>
                   <Link passHref href={href}>
-                    <a>{name}</a>
+                    <a onClick={handleClick}>{name}</a>
                   </Link>
                 </li>
               ))}

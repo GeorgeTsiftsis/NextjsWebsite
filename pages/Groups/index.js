@@ -6,7 +6,7 @@ function Groups() {
     <>
       <HorizontalLine3 />
       <div className={classes.container}>
-        <h2>alopro</h2>
+        <h2>Τμήματα</h2>
       </div>
     </>
   );

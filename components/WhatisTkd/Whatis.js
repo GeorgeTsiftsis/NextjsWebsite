@@ -5,7 +5,7 @@ import apostolistelikostoglou from "../../public/whatistkd.jpg";
 function Whatis() {
   const router = useRouter();
   function showDetailsHandler() {
-    router.push("/WhatIsTkd/1");
+    router.push("/WhatIsTkd");
   }
 
   return (
