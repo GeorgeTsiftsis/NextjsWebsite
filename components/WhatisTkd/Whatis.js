@@ -1,7 +1,7 @@
 import classes from "./Whatis.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import apostolistelikostoglou from "../../public/whatistkd.jpg";
+import apostolistelikostoglou from "../../public/homeapostolis(1).jpg";
 function Whatis() {
   const router = useRouter();
   function showDetailsHandler() {
