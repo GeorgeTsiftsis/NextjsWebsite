@@ -1,8 +1,8 @@
-import firebase from "../../components/util/firebase";
+// import firebase from "../../components/util/firebase";
 import ReactImageGalleryTest from "./DynamicColumn";
 import classes from "./classes.module.css";
 import HorizontalLine4 from "../../components/HorizontalLines/HorizontalLine4/HorizontalLine4";
-function EgkatastaseisTaekwondo(props) {
+function EgkatastaseisTaekwondo() {
   return (
     <>
       <HorizontalLine4 />
@@ -10,7 +10,7 @@ function EgkatastaseisTaekwondo(props) {
         <h1 className={classes.titles}>Φωτογραφίες Εισόδου</h1>
         <div className={classes.gridnews}></div>
         <h1 className={classes.titles}>Αίθουσες Ταεκβοντο και ρυθμικης Γυμναστικής</h1>
-        <ReactImageGalleryTest galleryphotos={props.galleryphotos} />
+        <ReactImageGalleryTest />
       </div>
     </>
   );
