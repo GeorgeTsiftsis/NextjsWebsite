@@ -2,7 +2,7 @@ import AnouncementList from "../components/Anouncements/AnouncementList";
 import firebase from "../components/util/firebase";
 import MainInformation from "../components/maininfos/Maininformation";
 import Counter from "../components/Counter/counter";
-import Whatis from "../components/WhatisTkd/Whatis";
+import Whatis from "../components/Infoabouttkd/Whatis";
 import Head from "next/head";
 // import FormforContact from "../components/FormforContact/FormforConract";
 import { motion } from "framer-motion";
@@ -23,7 +23,7 @@ function Homepage(props) {
         <MainInformation />
         <Counter />
         <AnouncementList anouncements={props.anouncements} />
-        <Whatis />
+        <Whatis object={props.object} />
         {/* <FormforContact /> */}
       </motion.section>
     </>
@@ -33,6 +33,7 @@ export default Homepage;
 
 export async function getServerSideProps(context) {
   const anouncements = [];
+  // const object = [];
 
   const response = await firebase
     .database()
@@ -42,8 +43,19 @@ export async function getServerSideProps(context) {
         anouncements.push(child.val());
       });
     });
+  // await firebase
+  //   .database()
+  //   .ref("WhatIsTkd")
+  //   .once("value", (snapshot) => {
+  //     snapshot.forEach((child) => {
+  //       object.push(child.val());
+  //     });
+  //   });
 
   return {
-    props: { anouncements },
+    props: {
+      anouncements,
+      // object
+    },
   };
 }

@@ -1,4 +1,4 @@
-import Horizontal2Line from "../../components/HorizontalLine/Horizontal2Line";
+import Horizontal2Line from "../../components/HorizontalLines/HorizontalLine/Horizontal2Line";
 import firebase from "../../components/util/firebase";
 import StaffList from "../../components/CompStaff/StaffList";
 import { motion } from "framer-motion";

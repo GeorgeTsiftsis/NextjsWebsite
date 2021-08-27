@@ -8,21 +8,18 @@ import OwnImage from "./Image";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 // import { motion } from "framer-motion";
 // import classes from "./active.module.css";
 // import NavLinksItemsFun, { NavBarItems } from "./NavBarItems";
 
 const links = [
   {
-    name: "Αρχίκη",
-    href: "/",
-  },
-  {
     name: "Σύλλογος Ιστορία",
     href: "/History",
   },
   {
-    name: "Πρόσωπικο",
+    name: "Προσωπικό",
     href: "/Staff",
   },
   {
@@ -33,6 +30,10 @@ const links = [
     name: "Επικοινωνία",
     href: "/Contact",
   },
+  {
+    name: "Αίθουσες",
+    href: "/Egkatastaseis-tae-kwon-do",
+  },
 ];
 
 const MainHeader = () => {
@@ -42,12 +43,19 @@ const MainHeader = () => {
     setOpen((setOpen) => (setOpen = !setOpen));
   };
 
+  const router = useRouter();
+  function Home() {
+    router.push("/");
+  }
+
   return (
     <>
       <header className={classes.header}>
         <nav className={classes.navbar}>
           <div className={classes.lala}>
-            <h1 className={classes.brandtitle}> Μακεδονική Δύναμη Κοζάνης </h1>
+            <h1 onClick={Home} className={classes.brandtitle}>
+              Μακεδονική Δύναμη Κοζάνης
+            </h1>
             <div className={classes.menu_icon} onClick={handleClick}>
               <i> {open ? <FiMenu className={classes.fas} /> : <FaTimes className={classes.fas} />}</i>
               <h1 className={classes.menu_index_title}>Menu</h1>
@@ -77,7 +85,7 @@ const MainHeader = () => {
           </div>
         </nav>
       </header>
-      <OwnImage src="/makdin.jpg" layout="fill" alt="makedoniki-dinami-logo"></OwnImage>
+      <OwnImage src="/makdin2.jpg" layout="fill" alt="makedoniki-dinami-logo"></OwnImage>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import classes from "./Card.module.css";
-import HorizontalLine from "../HorizontalLine/HorizontalLine";
+import HorizontalLine from "../HorizontalLines/HorizontalLine/HorizontalLine";
 import OldAnouncementItem from "./OldAnouncementItem";
 
 function OldAnouncementList(props) {

@@ -1,15 +1,41 @@
 import classes from "./style.module.css";
-import HorizontalLine3 from "../../components/HorizontalLine3/HorizontalLine3";
+import HorizontalLine3 from "../../components/HorizontalLines/HorizontalLine3/HorizontalLine3";
+import firebase from "../../components/util/firebase";
+import GroupList from "../../components/CompGroup/GroupList";
+import { motion } from "framer-motion";
 
-function Groups() {
+const variants = {
+  hidden: { opacity: 0, x: -200, y: 0 },
+  enter: { opacity: 1, x: 0, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
+};
+
+function Groups(props) {
   return (
     <>
-      <HorizontalLine3 />
-      <div className={classes.container}>
-        <h2>Τμήματα</h2>
-      </div>
+      <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
+        <HorizontalLine3 />
+
+        <GroupList GroupMembers={props.GroupMembers} key={props.id} />
+      </motion.section>
     </>
   );
 }
 
 export default Groups;
+
+export async function getStaticProps(context) {
+  const GroupMembers = [];
+
+  await firebase
+    .database()
+    .ref("Groups")
+    .once("value", (snapshot) => {
+      snapshot.forEach((child) => {
+        GroupMembers.push(child.val());
+      });
+    });
+  return {
+    props: { GroupMembers },
+  };
+}

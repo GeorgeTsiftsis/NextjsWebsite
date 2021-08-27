@@ -2,10 +2,10 @@ import classes from "./Whatis.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import apostolistelikostoglou from "../../public/homeapostolis(1).jpg";
-function Whatis() {
+function Whatis(props) {
   const router = useRouter();
   function showDetailsHandler() {
-    router.push("/WhatIsTkd");
+    router.push("WhatIsTkd/1");
   }
 
   return (

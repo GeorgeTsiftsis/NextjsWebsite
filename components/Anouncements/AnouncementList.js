@@ -1,6 +1,6 @@
 import AnouncementItem from "./AnouncementItem";
 import classes from "./Card.module.css";
-import HorizontalLine from "../HorizontalLine/HorizontalLine";
+import HorizontalLine from "../HorizontalLines/HorizontalLine/HorizontalLine";
 import { useState } from "react";
 
 function AnouncementList(props) {
