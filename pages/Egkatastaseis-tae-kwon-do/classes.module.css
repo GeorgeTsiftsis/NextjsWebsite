@@ -63,3 +63,10 @@
 .fs_toggle:fullscreen {
   background-color: #faa;
 }
+
+.imgs {
+  width: 50%;
+}
+.imgs .image-gallery-image {
+  max-width: 100%;
+}

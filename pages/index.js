@@ -2,7 +2,7 @@ import AnouncementList from "../components/Anouncements/AnouncementList";
 import firebase from "../components/util/firebase";
 import MainInformation from "../components/maininfos/Maininformation";
 import Counter from "../components/Counter/counter";
-import Whatis from "../components/Infoabouttkd/Whatis";
+import Whatis from "../components/Whatis/index";
 import Head from "next/head";
 // import FormforContact from "../components/FormforContact/FormforConract";
 import { motion } from "framer-motion";
