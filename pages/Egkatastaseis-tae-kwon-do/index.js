@@ -12,7 +12,7 @@ function EgkatastaseisTaekwondo(props) {
         {/* <h1 className={classes.titles}>Αίθουσες Ταεκβοντο και ρυθμικης Γυμναστικής</h1> */}
       </div>
 
-      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <ImageGallery className={classes.broken} bulletClass={true} showThumbnails={true} items={props.galleryphotos} />}
+      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <ImageGallery className={classes.broken} showBullets={true} showThumbnails={true} items={props.galleryphotos} />}
     </>
   );
 }

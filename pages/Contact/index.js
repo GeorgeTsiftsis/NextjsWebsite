@@ -15,13 +15,14 @@ const SimpleMap = (props) => {
   const [center, setCenter] = useState({ lat: 40.3006998281867, lng: 21.78543607992064 });
   const [zoom, setZoom] = useState(16);
   const defaultOptions = { scrollwheel: false };
+  const api_key = "AIzaSyD8PhnFnWcQnL8Qz2m9s8tKThO1IKZuBvg";
   {
     return (
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
         <ContactDetails />
         <FormforContact />
         <div style={{ height: "400px", width: "100%", padding: "1rem" }}>
-          <GoogleMapReact bootstrapURLKeys={{ key: "AIzaSyD8PhnFnWcQnL8Qz2m9s8tKThO1IKZuBvg" }} defaultCenter={center} defaultZoom={zoom} defaultOptions={defaultOptions}>
+          <GoogleMapReact bootstrapURLKeys={{ key: `${api_key}` }} defaultCenter={center} defaultZoom={zoom} defaultOptions={defaultOptions}>
             <Marker lat={40.3006998281867} lng={21.78543607992064} name="Εστίας 3, Πάτηστε για οδηγίες" color="red" />
           </GoogleMapReact>
         </div>

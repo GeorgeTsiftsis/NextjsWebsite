@@ -57,11 +57,16 @@ div.card {
 
 div.card img {
   max-width: 300px;
+  transition: transform 0.5s ease;
+}
+div.card img:hover {
+  transform: scale(1.15);
 }
 div.card .card__image_holder {
   background: rgba(0, 0, 0, 0.1);
   height: 0;
   padding-bottom: 75%;
+  overflow: hidden;
 }
 
 div.card div.card_title {
@@ -184,4 +189,12 @@ div.card.show div.flap2 {
   position: relative;
   text-decoration: none;
   transition: all 0.1s 0s ease-out;
+}
+
+.card__image {
+  transition: transform 0.5s ease;
+}
+
+.card__image:hover {
+  transform: scale(1.5);
 }

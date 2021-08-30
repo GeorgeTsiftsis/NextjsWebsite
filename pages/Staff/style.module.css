@@ -51,11 +51,17 @@ div.card {
 
 div.card img {
   max-width: 300px;
+  transition: transform 0.5s ease;
 }
+div.card img:hover {
+  transform: scale(1.05);
+}
+
 div.card .card__image_holder {
   background: rgba(0, 0, 0, 0.1);
   height: 0;
   padding-bottom: 75%;
+  overflow: hidden;
 }
 
 div.card div.card_title {

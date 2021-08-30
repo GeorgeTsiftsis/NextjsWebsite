@@ -3,7 +3,7 @@ import firebase from "../components/util/firebase";
 import MainInformation from "../components/maininfos/Maininformation";
 import Counter from "../components/Counter/counter";
 import Whatis from "../components/Whatis/index";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 // import FormforContact from "../components/FormforContact/FormforConract";
 import { motion } from "framer-motion";
 
@@ -15,10 +15,11 @@ const variants = {
 function Homepage(props) {
   return (
     <>
-      <Head>
-        <title>Μακεδονική Δύναμη Κόζάνης Τάε-κβον-ντο</title>
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
-      </Head>
+      <NextSeo
+        title="Μακεδονική Δύναμη Κόζάνης Τάε-κβον-ντο"
+        description="Αθλητικός Σύλλογος Ταε-Κβο-ντο Ρυθμικής Γυμναστικής "
+        // <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+      />
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
         <MainInformation />
         <Counter />
@@ -33,7 +34,6 @@ export default Homepage;
 
 export async function getServerSideProps(context) {
   const anouncements = [];
-  // const object = [];
 
   const response = await firebase
     .database()
@@ -43,19 +43,10 @@ export async function getServerSideProps(context) {
         anouncements.push(child.val());
       });
     });
-  // await firebase
-  //   .database()
-  //   .ref("WhatIsTkd")
-  //   .once("value", (snapshot) => {
-  //     snapshot.forEach((child) => {
-  //       object.push(child.val());
-  //     });
-  //   });
 
   return {
     props: {
       anouncements,
-      // object
     },
   };
 }

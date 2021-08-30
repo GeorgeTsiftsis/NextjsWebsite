@@ -1,5 +1,5 @@
 import { useState } from "react";
-import classes from "../../pages/Staff/style.module.css";
+import classes from "../../pages/Groups/style.module.css";
 import { useRouter } from "next/router";
 
 function GroupList(props) {
