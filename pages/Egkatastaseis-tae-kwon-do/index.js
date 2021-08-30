@@ -8,8 +8,8 @@ function EgkatastaseisTaekwondo(props) {
       <HorizontalLine4 />
       <div className={classes.wholeContainer}>
         <h1 className={classes.titles}>Φωτογραφίες Εισόδου</h1>
-        <div className={classes.gridnews}></div>
-        <h1 className={classes.titles}>Αίθουσες Ταεκβοντο και ρυθμικης Γυμναστικής</h1>
+
+        {/* <h1 className={classes.titles}>Αίθουσες Ταεκβοντο και ρυθμικης Γυμναστικής</h1> */}
       </div>
 
       {props.galleryphotos === undefined ? <h1>Oh no</h1> : <ImageGallery className={classes.broken} bulletClass={true} showThumbnails={true} items={props.galleryphotos} />}
