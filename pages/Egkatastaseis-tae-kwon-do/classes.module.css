@@ -1,3 +1,5 @@
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+
 .fullContainer {
   max-width: 1200px;
   display: flex;
@@ -19,54 +21,15 @@
   padding: 1.5rem 0.5rem;
 }
 
-.gridnews {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #a5cce1;
-
-  column-gap: 2em;
-  padding: 0rem;
-  grid-gap: 0.01rem;
-  padding-top: 2rem;
-}
-@media (max-width: 1200px) {
-  .gridnews {
-    grid-template-columns: 1fr 1fr;
-    padding-top: 4rem;
-  }
-}
-@media (max-width: 768px) {
-  .gridnews {
-    grid-template-columns: 1fr;
-    padding-top: 4rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .gridnews {
-    grid-template-columns: 1fr;
-    padding-top: 4rem;
-    padding: 1rem;
-  }
-}
-
 .titles {
   font-weight: 300;
   color: white;
-  /* font-family: "Manrope", sans-serif; */
 }
 
-.fs_toggle:not(:fullscreen) {
-  background-color: #afa;
-}
-
-.fs_toggle:fullscreen {
-  background-color: #faa;
-}
-
-.imgs {
-  width: 50%;
-}
-.imgs .image-gallery-image {
-  max-width: 100%;
+.broken {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6096ba;
 }

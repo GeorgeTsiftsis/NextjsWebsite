@@ -21,6 +21,7 @@
   font-weight: 500;
   background-color: #6096ba;
   margin: 0.5rem;
+  cursor: pointer;
 }
 
 .list_ul {

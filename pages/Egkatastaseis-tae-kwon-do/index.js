@@ -2,7 +2,6 @@ import firebase from "../../components/util/firebase";
 import classes from "./classes.module.css";
 import ImageGallery from "react-image-gallery";
 import HorizontalLine4 from "../../components/HorizontalLines/HorizontalLine4/HorizontalLine4";
-import { resolveHref } from "next/dist/shared/lib/router/router";
 function EgkatastaseisTaekwondo(props) {
   return (
     <>
@@ -11,8 +10,9 @@ function EgkatastaseisTaekwondo(props) {
         <h1 className={classes.titles}>Φωτογραφίες Εισόδου</h1>
         <div className={classes.gridnews}></div>
         <h1 className={classes.titles}>Αίθουσες Ταεκβοντο και ρυθμικης Γυμναστικής</h1>
-        {props.galleryphotos === undefined ? <h1>Oh no</h1> : <ImageGallery className={classes.imgs} showThumbnails={true} items={props.galleryphotos} />}
       </div>
+
+      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <ImageGallery className={classes.broken} bulletClass={true} showThumbnails={true} items={props.galleryphotos} />}
     </>
   );
 }
