@@ -10,4 +10,5 @@ module.exports = {
     config.plugins.push(new webpack.EnvironmentPlugin(myEnv));
     return config;
   },
+  future: { webpack5: true },
 };
