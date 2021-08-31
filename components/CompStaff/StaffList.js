@@ -11,12 +11,9 @@ function StaffList(props) {
     objects: [props.staffMembers[0], props.staffMembers[1], props.staffMembers[2], props.staffMembers[3], props.staffMembers[4]],
   });
 
-  console.log(props.staffMembers[0].id);
-
   function toggleActive(index) {
     changeState({ ...appState, activeObject: appState.objects[index] });
   }
-  console.log(props.staffMembers.id);
 
   const handleClick = (e) => {
     var zindex = 10;

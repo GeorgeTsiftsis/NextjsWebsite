@@ -1,6 +1,5 @@
-require("dotenv").config();
 const mail = require("@sendgrid/mail");
-mail.setApiKey("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");
+mail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
 
 export default async (req, res) => {
   const body = JSON.parse(req.body);

@@ -11,12 +11,9 @@ function GroupList(props) {
     objects: [props.GroupMembers[0], props.GroupMembers[1], props.GroupMembers[2], props.GroupMembers[3], props.GroupMembers[4]],
   });
 
-  console.log(props.GroupMembers[0].id);
-
   function toggleActive(index) {
     changeState({ ...appState, activeObject: appState.objects[index] });
   }
-  console.log(props.GroupMembers.id);
 
   const handleClick = (e) => {
     var zindex = 10;
