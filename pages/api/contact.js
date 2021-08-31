@@ -1,8 +1,5 @@
 const mail = require("@sendgrid/mail");
-// mail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY);
 mail.setApiKey(process.env.gridCustomKey);
-
-// {process.env.gridCustomKey}
 export default async (req, res) => {
   const body = JSON.parse(req.body);
 

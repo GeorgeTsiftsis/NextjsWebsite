@@ -15,9 +15,7 @@ const SimpleMap = (props) => {
   const [center, setCenter] = useState({ lat: 40.3006998281867, lng: 21.78543607992064 });
   const [zoom, setZoom] = useState(16);
   const defaultOptions = { scrollwheel: false };
-  // const api_key = process.env.NEXT_PUBLIC_API_KEY;
   const api_key = process.env.customKey;
-  // {process.env.customKey}
 
   {
     return (
