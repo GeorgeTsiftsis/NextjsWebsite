@@ -6,8 +6,6 @@ import Head from "next/head";
 import Error from "next/error";
 // import { AnimatePresence, motion } from "framer-motion";
 
-// // import "bootstrap/dist/css/bootstrap.min.css";
-
 function MyApp({ Component, pageProps }) {
   if (pageProps.error) {
     return <Error statusCode={pageProps.error.statusCode} title={pageProps.error.message} />;
