@@ -1,4 +1,4 @@
-import Horizontal2Line from "../../components/HorizontalLines/HorizontalLine/Horizontal2Line";
+import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine"
 import firebase from "../../components/util/firebase";
 import StaffList from "../../components/CompStaff/StaffList";
 import { motion } from "framer-motion";
@@ -11,7 +11,7 @@ const variants = {
 function Staff(props) {
   return (
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-      <Horizontal2Line />
+      <HorizontalLine title={"ΠΡΟΣΩΠΙΚΟ"} />
       <StaffList staffMembers={props.staffMembers} key={props.id} />
     </motion.section>
   );

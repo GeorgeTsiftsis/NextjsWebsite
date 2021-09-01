@@ -1,7 +1,7 @@
 import firebase from "../../components/util/firebase";
 import classes from "./classes.module.css";
 import ImageGallery from "react-image-gallery";
-import HorizontalLine4 from "../../components/HorizontalLines/HorizontalLine4/HorizontalLine4";
+import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -13,7 +13,8 @@ const variants = {
 function EgkatastaseisTaekwondo(props) {
   return (
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-      <HorizontalLine4 />
+             <HorizontalLine title={"ΑΙΘΟΥΣΕΣ"}  />
+
       <div className={classes.wholeContainer}>
         <h1 className={classes.titles}>Φωτογραφίες Εισόδου</h1>
 

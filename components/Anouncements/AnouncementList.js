@@ -20,7 +20,8 @@ function AnouncementList(props) {
 
   return (
     <>
-      <HorizontalLine />
+      <HorizontalLine title={"ΑΝΑΚΟΙΝΩΣΕΙΣ"}  />
+
       <section className={classes.section}>
         <div className={classes.gridnews}>{anouncementsList}</div>
         <span className={classes.span}>

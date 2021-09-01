@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import HorizontalLine5 from "../../components/HorizontalLines/HorizontalLine5";
+import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -9,7 +9,7 @@ const variants = {
 function Draseis() {
   return (
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-      <HorizontalLine5 />;
+        <HorizontalLine title={"ΔΡΑΣΕΙΣ"}  />
     </motion.section>
   );
 }

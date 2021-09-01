@@ -1,5 +1,5 @@
 import classes from "./style.module.css";
-import HorizontalLine3 from "../../components/HorizontalLines/HorizontalLine3/HorizontalLine3";
+import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import firebase from "../../components/util/firebase";
 import GroupList from "../../components/CompGroup/GroupList";
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ function Groups(props) {
   return (
     <>
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-        <HorizontalLine3 />
+        <HorizontalLine title={"ΤΜΗΜΑΤΑ"}  />
 
         <GroupList GroupMembers={props.GroupMembers} key={props.id} />
       </motion.section>
