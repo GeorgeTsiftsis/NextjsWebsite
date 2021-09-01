@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 
 const links = [
   {
-    name: "Σύλλογος Ιστορία",
+    name: "Σύλλογος",
     href: "/History",
   },
   {
@@ -33,6 +33,10 @@ const links = [
   {
     name: "Αίθουσες",
     href: "/Egkatastaseis-tae-kwon-do",
+  },
+  {
+    name: "Δράσεις",
+    href: "/Draseis",
   },
 ];
 

@@ -11,9 +11,7 @@ export default function AnouncementItem(props) {
         <p className={classes.date_of_anouncements}> {props.anouncement.date}</p>
         <p className={classes.description}> {props.anouncement.description}</p>
         <Link passHref href={"/announcement/" + props.anouncement.id}>
-          {/* <span className={classes.span}> */}
           <button className={classes.backlink_more_info}>{props.anouncement.readMore}</button>
-          {/* </span> */}
         </Link>
       </div>
     </section>

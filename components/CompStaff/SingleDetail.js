@@ -10,7 +10,7 @@ function SingleDetail(props) {
         <p className={classes.description}> {props.object.description}</p>
       </div>
       <div className={classes.rightcol}>
-        <img className={classes.photo} src={props.object.photo} alt="lorem"></img>
+        <img className={classes.photo} src={props.object.photo} alt={props.object.name}></img>
       </div>
     </section>
   );

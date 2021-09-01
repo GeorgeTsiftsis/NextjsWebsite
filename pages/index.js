@@ -3,8 +3,9 @@ import firebase from "../components/util/firebase";
 import MainInformation from "../components/maininfos/Maininformation";
 import Counter from "../components/Counter/counter";
 import Whatis from "../components/Whatis/index";
-import { NextSeo } from "next-seo";
+// import { NextSeo } from "next-seo";
 // import FormforContact from "../components/FormforContact/FormforConract";
+import Head from "next/head";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -15,17 +16,17 @@ const variants = {
 function Homepage(props) {
   return (
     <>
-      <NextSeo
-        title="Μακεδονική Δύναμη Κόζάνης Τάε-κβον-ντο"
-        description="Αθλητικός Σύλλογος Ταε-Κβο-ντο Ρυθμικής Γυμναστικής "
+      <Head>
+        <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Ταε-Κβο-Ντο</title>
+        <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+        {/* title="Μακεδονική Δύναμη Κόζάνης Τάε-κβον-ντο"
 
-        // <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
 
         // <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         // <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         // <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        // <link rel="manifest" href="/site.webmanifest">
-      />
+        // <link rel="manifest" href="/site.webmanifest"> */}
+      </Head>
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
         <MainInformation />
         <Counter />

@@ -45,6 +45,12 @@
   width: 100%;
 }
 
+@media (max-width: 780px) {
+  .header a {
+    padding: 5px 15px 5px 15px;
+  }
+}
+
 @media (max-width: 700px) {
   .fullwidth {
     width: 100%;
@@ -82,7 +88,7 @@
   border-radius: 10px;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 675px) {
   .fab {
     font-size: 2.5rem;
     color: #2f308b;
@@ -104,13 +110,13 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 675px) {
   /* .navbar_links {
       font-size: 1.2rem;
       margin: 0.5rem;
     } */
   .brandtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
     white-space: pre-wrap;
     font-weight: 500;
     margin-bottom: 17px;
@@ -119,7 +125,11 @@
     width: 280px;
   }
   .navbar {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
   }
 
   .menu_icon {
@@ -153,6 +163,7 @@
     background-color: #4f80a0;
     border-radius: 16px;
     padding-bottom: 0.2rem;
+    margin-top: 10px;
   }
 
   .list {
@@ -163,7 +174,7 @@
   .header a {
     padding: 1rem 5rem;
     font-size: 23px;
-    padding: 0px 60px 5px 60px;
+    padding: 0px 6rem 5px 6rem;
     background-color: #4f80a0;
     width: 100%;
     display: inherit;
