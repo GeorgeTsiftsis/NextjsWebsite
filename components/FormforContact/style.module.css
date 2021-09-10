@@ -13,6 +13,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  
   /* width:50%; */
 }
 
@@ -136,6 +137,8 @@
     display: flex;
     flex-direction: column;
     grid-row-gap: 0;
+    /* width:320px; */
+    /* ad */
   }
 
   .name {
@@ -150,6 +153,11 @@
   .break {
     display: inline;
   }
+  .message_container {
+    width:100%;
+    padding:3.4rem;
+    
+  }
 }
 .section {
   padding: 2rem;
@@ -158,4 +166,10 @@
 .text {
   font-weight: 400;
   font-family: "Manrope", sans-serif;
+}
+
+@media (max-width: 374px){
+  .card{
+    padding:1.2rem;
+  }
 }
