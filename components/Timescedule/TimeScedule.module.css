@@ -1,0 +1,45 @@
+.bigdiv{
+ padding:1rem 2rem ;  
+ /* border:2px solid gold; */
+ display:flex;
+ flex-direction:column;
+ align-items: center;
+ justify-content: center;
+ /* width:300px; */
+ /* background-color: #6096ba; */
+ background-color: rgb(136, 125, 60);
+ color:white;
+ font-family: "Manrope", sans-serif;
+ border-radius: 10px;
+ margin-bottom: 1rem;
+
+}
+
+.divo{
+    display:flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+   justify-content: space-between;
+}
+
+.day{
+width:40%;
+padding-right: 1rem;
+
+}
+.hour{
+    width:60%;
+    text-align: center;
+
+}
+.background{
+    background-color: black;
+    display:flex;
+    background-color: #6096ba;
+    align-items: center;
+    justify-content: center;
+}
+.rol {
+    display:flex;
+    flex-direction: column;
+}

@@ -55,14 +55,14 @@ const MainHeader = () => {
   return (
     <>
       <header className={classes.header}>
-        <nav className={classes.navbar}>
+        <nav  className={classes.navbar}>
           <div className={classes.lala}>
             <h1 onClick={Home} className={classes.brandtitle}>
               Μακεδονική Δύναμη Κοζάνης
             </h1>
             <div className={classes.menu_icon} onClick={handleClick}>
               <i> {open ? <FiMenu className={classes.fas} /> : <FaTimes className={classes.fas} />}</i>
-              <h1 className={classes.menu_index_title}>Menu</h1>
+              <h1  className={classes.menu_index_title}>Menu</h1>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ const MainHeader = () => {
               {links.map(({ name, href }) => (
                 <li key={name} className={classes.list}>
                   <Link passHref href={href}>
-                    <a onClick={handleClick}>{name}</a>
+                    <a  onClick={handleClick}>{name}</a>
                   </Link>
                 </li>
               ))}

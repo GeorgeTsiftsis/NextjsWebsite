@@ -34,42 +34,6 @@ function FormforContact() {
     });
   };
 
-  // fetch("/api/contact", {
-  //   method: "POST",
-  //   headers: {
-  //     Accept: "application/json, text/plain, */*",
-  //     "Content-Type": "application/json",
-  //   },
-  //   body: JSON.stringify(data),
-  // }).then((res) => {
-  //   console.log("Response received");
-  //   if (res.status === 200) {
-  //     console.log("Response succeeded!");
-  //     setSubmitted(true);
-  //     setName("");
-  //     setLastName("");
-  //     setEmail("");
-  //     setBody("");
-  //   }
-  // });
-  // firebase
-  //   .collection("contacts")
-  //   .add({
-  //     name: name,
-  //     lastname: lastname,
-  //     email: email,
-  //     message: message,
-  //   })
-  //   .then(() => {
-  //     alert("Message Has been submitted");
-  //   })
-  //   .catch((error) => {
-  //     alert(error.message);
-  //   });
-  // setName("");
-  // setLastName("");
-  // setEmail("");
-  // setMessage("");
 
   return (
     <>
