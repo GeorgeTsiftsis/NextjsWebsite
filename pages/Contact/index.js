@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import Marker from "./Marker";
 import { motion } from "framer-motion";
-import TimeScedule from "../../components/TimeScedule/index"
+import TimeScedule from "../../components/TimeScedule/index";
 import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import TelContact from "../../components/TelContact";
 import classes from './classes.module.css'
