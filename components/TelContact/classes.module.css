@@ -18,15 +18,16 @@
     border-bottom: 2px solid black;
     display:flex;
     flex-direction: row;
+    
 }
 
 .day{
-    width:50%;
-    padding-right: 0.2rem;
+    width:40%;
+    padding-right: 2.8rem;
     
 }
 .hour{
-    /* width:60%; */
+    width:60%;
        text-align: right;
    
    }
@@ -37,3 +38,7 @@
        align-items: center;
        justify-content: center;
    }
+   @media (max-width: 600px){
+       .divo{
+       width:250px;
+   }}

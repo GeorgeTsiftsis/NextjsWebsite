@@ -12,11 +12,11 @@ function TelContact() {
     </li>
     <li className={classes.divo}>
     <span className={classes.day}>Σταθερό:</span> 
-    <strong className={classes.hour}>24610-25054 </strong>
+    <strong className={classes.hour}>24610-25054</strong>
     </li>
     <li className={classes.divo}>
     <span className={classes.day}>Τηλ:</span> 
-    <strong className={classes.hour}>6946504020 </strong>
+    <strong className={classes.hour}>6946504020</strong>
     </li>
     </ul>
          </div>   

@@ -24,7 +24,7 @@ const SimpleMap = (props) => {
       <motion.section style={{backgroundColor: '#6096ba'}} initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
        <HorizontalLine title={"ΠΛΗΡΟΦΟΡΙΕΣ"}  />
        <div className={classes.container_details_contact}>
-        <p className={classes.text_details}> Η έδρα του συλλόγου βρίσκεται Διεύθυνση Εστίας 3 ΤΚ 50131 Κοζανη. Επικοινωνήστε μαζί μας συμπληρόνοντας την φόρμα για οποιαδήποτε απορία/πληροφορία μέσω της παρακατω φόρμας η μπορειτε να καλέστε στο <strong style={{display:'block'}}> Σταθερό: 24610 25054</strong> <strong> Κινητό: 6946504020</strong>. </p>
+        <p className={classes.text_details}> Η έδρα του συλλόγου βρίσκεται Διεύθυνση Εστίας 3 ΤΚ 50131 Κοζανη. Επικοινωνήστε μαζί μας συμπληρόνοντας την φόρμα για οποιαδήποτε απορία/πληροφορία μέσω της παρακατω φόρμας η μπορειτε να καλέστε στο <strong style={{display:'block'}}>Σταθερό: 24610 25054</strong> <strong> Κινητό: 6946504020</strong>. </p>
       </div>
        
        <div className={classes.bigDiv}  > 
@@ -35,11 +35,11 @@ const SimpleMap = (props) => {
       </div>
       </div>
     
-        {/* <div style={{ height: "400px", width: "100%", padding: "1rem" }}>
+        <div style={{ height: "400px", width: "100%", padding: "1rem" }}>
           <GoogleMapReact bootstrapURLKeys={{ key: `${api_key}` }} defaultCenter={center} defaultZoom={zoom} defaultOptions={defaultOptions}>
             <Marker lat={40.3006998281867} lng={21.78543607992064} name="Εστίας 3, Πάτηστε για οδηγίες" color="red" />
           </GoogleMapReact>
-        </div> */}
+        </div>
       </motion.section>
     );
   }
