@@ -24,6 +24,7 @@
 .day{
     width:10%;
     padding-right: 2.8rem;
+    flex-wrap: nowrap;
     
 }
 .hour{

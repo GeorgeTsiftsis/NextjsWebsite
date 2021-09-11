@@ -19,7 +19,7 @@ function TelContact() {
     <strong className={classes.hour}>6946504020</strong>
     </li>
     <li className={classes.divo}>
-    <span className={classes.day}>E-mail</span> 
+    <span className={classes.day}>Email</span> 
     <span style={{cursor:'pointer'}} className={classes.hour}>chrisalmasidistkd@gmail.com</span>
     </li>
     </ul>
