@@ -16,7 +16,6 @@ function EgkatastaseisTaekwondo(props) {
              <HorizontalLine title={"ΑΙΘΟΥΣΕΣ"}  />
 
       <div className={classes.wholeContainer}>
-        <h1 className={classes.titles}>Φωτογραφίες Εισόδου</h1>
 
         {/* <h1 className={classes.titles}>Αίθουσες Ταεκβοντο και ρυθμικης Γυμναστικής</h1> */}
       </div>
