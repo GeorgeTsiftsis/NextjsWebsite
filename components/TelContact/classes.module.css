@@ -22,13 +22,14 @@
 }
 
 .day{
-    width:40%;
+    width:10%;
     padding-right: 2.8rem;
     
 }
 .hour{
-    width:60%;
+    width:80%;
        text-align: right;
+     
    
    }
    .background{
@@ -40,5 +41,5 @@
    }
    @media (max-width: 600px){
        .divo{
-       width:250px;
+       width:350px;
    }}

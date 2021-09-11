@@ -18,6 +18,10 @@ function TelContact() {
     <span className={classes.day}>Τηλ:</span> 
     <strong className={classes.hour}>6946504020</strong>
     </li>
+    <li className={classes.divo}>
+    <span className={classes.day}>E-mail</span> 
+    <strong className={classes.hour}>chrisalmasidistkd@gmail.com</strong>
+    </li>
     </ul>
          </div>   
         </div>
