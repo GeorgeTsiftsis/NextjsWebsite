@@ -128,7 +128,7 @@
 }
 
 /* For Mobile */
-@media (max-width: 750px) {
+@media (max-width: 857px) {
   .container {
     width:23.5rem;
   }

@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 // import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 // import "./Navbarmobile.css";
@@ -70,8 +69,8 @@ const MainHeader = () => {
             <ul className={classes.list_ul}>
               {links.map(({ name, href }) => (
                 <li key={name} className={classes.list}>
-                  <Link passHref href={href}>
-                    <a  onClick={handleClick}>{name}</a>
+                  <Link  href={href}>
+                    <a passHref={href} className={router.route === {href} ? `${classes.active}` : ""}  onClick={handleClick}>{name}</a>
                   </Link>
                 </li>
               ))}

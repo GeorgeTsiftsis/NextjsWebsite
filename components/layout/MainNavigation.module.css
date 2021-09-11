@@ -205,29 +205,15 @@
   padding: 0 !important;
 }
 
-/* .header .active {
-  color: gold;
-  background-color: gold;
-} */
 
-.list .active {
+
+.Link .active {
   background-color: gold;
-  /* padding: 20px; */
-}
-.list .lala {
-  background-color: black;
+  font-size:30px;
 }
 
-.navigation_underline {
-  color: gold;
+ .active  {
   background-color: gold;
-  border: 2px solid yellow;
+  padding: 20px;
 }
-.Link .div {
-  background-color: gold;
-}
-
-.active {
-  background-color: gold;
-  /* padding: 20px; */
-}
+ 
