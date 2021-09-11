@@ -52,8 +52,8 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" rel="noopener noreferrer" href="mailto:gtsiff@gmail.com">
-                    <AiOutlineMail className={classes.location} /> macedonianforce@outlook.com
+                  <a target="_blank" rel="noopener noreferrer" href="mailto:chrisalmasidistkd@gmail.com">
+                    <AiOutlineMail className={classes.location} /> chrisalmasidistkd@gmail.com
                   </a>
                 </li>
               </ul>

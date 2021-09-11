@@ -130,11 +130,10 @@
 /* For Mobile */
 @media (max-width: 857px) {
   .container {
-    width:23.5rem;
+    padding:3rem;
+    /* width:23.5rem; */
   }
-  /* .card{
-    width:rem;
-  } */
+
 
 
   .form {
@@ -157,11 +156,11 @@
   .break {
     display: inline;
   }
-  .message_container {
+  /* .message_container { */
     /* width:100%; */
-    padding:3.4rem;
+    /* padding:3.4rem;  } */
     
-  }
+ 
 }
 .section {
   padding: 2rem;
@@ -172,7 +171,7 @@
   font-family: "Manrope", sans-serif;
 }
 
-@media (max-width: 375px){
+/* @media (max-width: 375px){
   
  
-}
+} */

@@ -13,6 +13,8 @@ background-color: #6096ba;
     display:flex;
     flex-direction:column;
     margin-left: 1rem;
+    align-self: flex-start;
+    padding-top: 4rem;
   
 }
 .container_details_contact {
@@ -30,12 +32,22 @@ background-color: #6096ba;
     font-weight: 300;
     font-family: "Manrope", sans-serif;
   }
-@media (max-width: 600px) {
+@media (max-width: 744px) {
     .bigDiv{
         flex-direction: column;
         justify-content:center;
         width:100%;
         margin:0;
 
-    }}
+    }
+    .SceduleContact{
+      align-self: center;
+    }
+    }
+    @media (max-width: 910px) {
+      .SceduleContact{
+        /* align-self: center; */
+        margin-left: 0rem;
+      }
+    }
     

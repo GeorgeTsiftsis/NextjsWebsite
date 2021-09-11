@@ -37,11 +37,11 @@ const SimpleMap = (props) => {
           </div>
         </div>
 
-        <div style={{ height: "400px", width: "100%", padding: "1rem" }}>
+        {/* <div style={{ height: "400px", width: "100%", padding: "1rem" }}>
           <GoogleMapReact bootstrapURLKeys={{ key: `${api_key}` }} defaultCenter={center} defaultZoom={zoom} defaultOptions={defaultOptions}>
             <Marker lat={40.3006998281867} lng={21.78543607992064} name="Εστίας 3, Πάτηστε για οδηγίες" color="red" />
           </GoogleMapReact>
-        </div>
+        </div> */}
       </motion.section>
     );
   }

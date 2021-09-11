@@ -20,12 +20,13 @@ function TelContact() {
     </li>
     <li className={classes.divo}>
     <span className={classes.day}>Email</span> 
-    <span style={{cursor:'pointer'}} className={classes.hour}>chrisalmasidistkd@gmail.com</span>
+    <a target="_blank" rel="noopener noreferrer" href="mailto:chrisalmasidistkd@gmail.com" style={{cursor:'pointer', color:'white', textDecoration:'none'}} className={classes.hour}>chrisalmasidistkd@gmail.com</a>
     </li>
     </ul>
          </div>   
         </div>
     )
 }
+
 
 export default TelContact
