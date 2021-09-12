@@ -4,6 +4,7 @@ import ImageGallery from "react-image-gallery";
 import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import { motion } from "framer-motion";
 
+
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -15,12 +16,9 @@ function EgkatastaseisTaekwondo(props) {
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
              <HorizontalLine title={"ΑΙΘΟΥΣΕΣ"}  />
 
-      <div className={classes.wholeContainer}>
+     
 
-        {/* <h1 className={classes.titles}>Αίθουσες Ταεκβοντο και ρυθμικης Γυμναστικής</h1> */}
-      </div>
-
-      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <ImageGallery className={classes.broken} showBullets={true} showThumbnails={true} items={props.galleryphotos} />}
+      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba'}}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
     </motion.section>
   );
 }

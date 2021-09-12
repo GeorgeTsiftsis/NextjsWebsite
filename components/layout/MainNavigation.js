@@ -70,7 +70,7 @@ const MainHeader = () => {
               {links.map(({ name, href }) => (
                 <li key={name} className={classes.list}>
                   <Link  href={href}>
-                    <a passHref={href} className={router.route === {href} ? `${classes.active}` : ""}  onClick={handleClick}>{name}</a>
+                    <a passhref={href} className={router.route === {href} ? `${classes.active}` : ""}  onClick={handleClick}>{name}</a>
                   </Link>
                 </li>
               ))}
