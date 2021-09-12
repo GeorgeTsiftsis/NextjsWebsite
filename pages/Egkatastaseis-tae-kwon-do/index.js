@@ -14,11 +14,11 @@ const variants = {
 function EgkatastaseisTaekwondo(props) {
   return (
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-             <HorizontalLine title={"ΑΙΘΟΥΣΕΣ"}  />
+             <HorizontalLine  title={"ΑΙΘΟΥΣΕΣ"}  />
 
      
 
-      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba'}}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
+      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba', }}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
     </motion.section>
   );
 }

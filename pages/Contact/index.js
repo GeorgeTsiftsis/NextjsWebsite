@@ -32,8 +32,8 @@ const SimpleMap = (props) => {
         <div className={classes.bigDiv}>
           <FormforContact />
           <div className={classes.SceduleContact}>
-            <TimeScedule style={{ alignSelf: "end" }} />
-            <TelContact />
+            {/* <TimeScedule style={{ alignSelf: "end" }} />
+            <TelContact /> */}
           </div>
         </div>
 
