@@ -60,7 +60,7 @@ const MainHeader = () => {
               Μακεδονική Δύναμη Κοζάνης
             </h1>
             <div className={classes.menu_icon} onClick={handleClick}>
-              <i> {open ? <FiMenu className={classes.fas} /> : <FaTimes className={classes.fas} />}</i>
+              {open ? <FiMenu className={classes.fas} /> : <FaTimes className={classes.fas} />}
               <h1  className={classes.menu_index_title}>Menu</h1>
             </div>
           </div>
@@ -70,7 +70,7 @@ const MainHeader = () => {
               {links.map(({ name, href }) => (
                 <li key={name} className={classes.list}>
                   <Link  href={href}>
-                    <a passhref={href} className={router.route === {href} ? `${classes.active}` : ""}  onClick={handleClick}>{name}</a>
+                    <a passhref={href} className={classes.alink} onClick={handleClick}>{name}</a>
                   </Link>
                 </li>
               ))}

@@ -8,12 +8,12 @@
   font-size: 1.062rem;
   line-height: 1.6;
   background-color: #6096ba;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding:4rem 0;
+
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  
+  width:90%;
   /* width:50%; */
 }
 
@@ -134,7 +134,9 @@
     /* width:23.5rem; */
   }
 
-
+.body {
+  padding:0;
+}
 
   .form {
     display: flex;

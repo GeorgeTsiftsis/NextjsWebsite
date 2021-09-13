@@ -1,5 +1,5 @@
 .bigdiv{
-    padding: 1rem 2rem;  
+    padding: 1rem 1rem;  
     font-family: "Manrope", sans-serif;
     /* border:2px solid gold; */
     display:flex;
@@ -18,33 +18,35 @@
     border-bottom: 2px solid black;
     display:flex;
     flex-direction: row;
+    /* width: 95%; */
+    width:300px;
+    justify-content: space-between;
+
+
     
 }
 
 .day{
-    width:10%;
-    padding-right: 2.8rem;
+    /* width:10%; */
+    /* padding-right: 2.8rem; */
     flex-wrap: nowrap;
     
 }
 .hour{
-    width:80%;
+    /* width:80%; */
        text-align: right;
      
    
    }
    .background{
-       background-color: black;
        display:flex;
        background-color: #6096ba;
        align-items: center;
        justify-content: center;
+       /* width:100%; */
    }
+  
    @media (max-width: 600px){
-       .divo{
-       width:300px;
-   }}
-   /* @media (max-width: 320px){
     .bigdiv{
-    padding:0rem;
-}} */
+   padding:1rem 0.5rem;
+}}
