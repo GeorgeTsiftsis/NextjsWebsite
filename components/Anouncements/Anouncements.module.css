@@ -49,7 +49,6 @@
   font-weight: 600;
   color: rgba(124, 58, 237);
   background: white;
-  /* display: block; */
   padding: 0.25rem 1rem;
   border-width: 1px;
   border-radius: 9999px;
@@ -63,14 +62,11 @@
   left: 10px;
   overflow: hidden;
   white-space: nowrap;
-  /* position: sticky; */
   cursor: pointer;
   font-weight: 700;
 }
 .backlink_more_info:hover {
   color: white;
-  /* --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity)); */
   --tw-bg-opacity: 1;
   background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
 }

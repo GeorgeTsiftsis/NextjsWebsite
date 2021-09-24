@@ -18,7 +18,7 @@ function EgkatastaseisTaekwondo(props) {
 
      
 
-      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba', }}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
+      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba',paddingTop:'3rem' }}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
     </motion.section>
   );
 }

@@ -15,7 +15,7 @@ export default function Counter() {
     // <Mycounter>
     <section className={classes.container}>
       <div className={classes.minicontainer}>
-        <CountUp start={gre ? 0 : null} end={120} duration={1} redraw={true}>
+        <CountUp start={gre ? 0 : null} end={350} duration={1} redraw={true}>
           {({ countUpRef }) => (
             <div className={classes.containerfornumbera}>
               <span className={classes.number} ref={countUpRef} />
