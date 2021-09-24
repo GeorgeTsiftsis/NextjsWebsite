@@ -48,7 +48,7 @@ function SingleDetailGroup(props) {
       </div>
       <div className={classes.divofgroup}>
       <h1 className={classes.title}>{props.object.t1}</h1>
-      <ul className= {classes.lista}>
+      <ul className= {classes.list}>
         <li>{props.object.t2}</li>
         <li>{props.object.t3}</li>
         <li>{props.object.t4}</li>
