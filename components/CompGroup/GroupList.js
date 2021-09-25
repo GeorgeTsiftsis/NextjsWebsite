@@ -8,7 +8,7 @@ function GroupList(props) {
 
   const [appState, changeState] = useState({
     activeObject: null,
-    objects: [props.GroupMembers[0], props.GroupMembers[1], props.GroupMembers[2], props.GroupMembers[3]],
+    objects: [props.GroupMembers[0], props.GroupMembers[1]],
   });
 
   function toggleActive(index) {

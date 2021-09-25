@@ -33,6 +33,7 @@
   height: auto;
   border: 5px solid #f0f0f0;
   border-right: none;
+  border-radius:16px;
 }
 
 .title {
@@ -118,6 +119,7 @@
 }
 .photodet {
   max-width:200px;
+  border-radius: 16px;
 }
 /* .listofgroup {
 
