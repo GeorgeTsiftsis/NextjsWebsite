@@ -47,14 +47,34 @@ function SingleDetailGroup(props) {
      
       </div>
       <div className={classes.divofgroup}>
-      <h1 className={classes.title}>{props.object.t1}</h1>
-      <ul className= {classes.list}>
-        <li>{props.object.t2}</li>
-        <li>{props.object.t3}</li>
-        <li>{props.object.t4}</li>
-        <li>{props.object.t5}</li>
-        <li>{props.object.t6}</li>
-        <li>{props.object.t7}</li>
+      <h1 className={classes.title}>{props.object.t1} 
+      </h1>
+      <ul className= {classes.lista}>
+        <div className={classes.divphoto}> 
+        <img className= {classes.photodet}  src={props.object.p1} alt={props.object.name}></img>
+        <li className= {classes.item}>{props.object.t2}</li>
+
+        </div>
+        <div  className={classes.divphoto}> 
+        <img className= {classes.photodet}  src={props.object.p2} alt={props.object.name}></img>
+        <li className= {classes.item}>{props.object.t3}</li>
+        </div>
+        <div className={classes.divphoto}> 
+        <img className= {classes.photodet}  src={props.object.p3} alt={props.object.name}></img>
+        <li className= {classes.item}>{props.object.t4}</li>
+        </div>
+        <div className={classes.divphoto}> 
+        <img className= {classes.photodet}  src={props.object.p4} alt={props.object.name}></img>
+        <li className= {classes.item}>{props.object.t5}</li>
+        </div>
+        <div className={classes.divphoto}> 
+        <img className= {classes.photodet}  src={props.object.p5} alt={props.object.name}></img>
+        <li className= {classes.item}>{props.object.t6}</li>
+        </div>
+        <div className={classes.divphoto}> 
+        <img className= {classes.photodet}  src={props.object.p6} alt={props.object.name}></img>
+        <li className= {classes.item}>{props.object.t7}</li>
+        </div>
       </ul>
 </div>
     </section>
