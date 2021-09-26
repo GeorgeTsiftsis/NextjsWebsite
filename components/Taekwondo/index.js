@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import apostolistelikostoglou from "../../public/whatistkd.jpg";
-import Head from "next/Head";
+import Head from "next/head";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
