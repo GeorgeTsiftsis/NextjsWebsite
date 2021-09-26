@@ -1,5 +1,5 @@
 import classes from "./style.module.css";
-import Head from 'next/Head';
+import Head from "next/head";
 function SingleDetail(props) {
   return (
     <>
