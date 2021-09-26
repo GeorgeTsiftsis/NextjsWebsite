@@ -3,7 +3,7 @@ import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/Hori
 import firebase from "../../components/util/firebase";
 import GroupList from "../../components/CompGroup/GroupList";
 import { motion } from "framer-motion";
-import Head from 'next/head'
+import Head from "next/head";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },

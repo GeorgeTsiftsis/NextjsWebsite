@@ -3,7 +3,7 @@ import classes from "./classes.module.css";
 import ImageGallery from "react-image-gallery";
 import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import { motion } from "framer-motion";
-import Head from 'next/head';
+import Head from "next/head";
 
 
 const variants = {

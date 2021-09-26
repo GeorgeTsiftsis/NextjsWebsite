@@ -1,6 +1,6 @@
 import classes from "./style.module.css";
 import { motion } from "framer-motion";
-import Head from 'next/head'
+import Head from "next/head";
 function SingleDetailGroup(props) {
   return (
     <>

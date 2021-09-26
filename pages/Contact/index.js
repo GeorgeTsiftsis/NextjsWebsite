@@ -7,7 +7,7 @@ import TimeScedule from "../../components/TimeScedule/index";
 import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import TelContact from "../../components/TelContact";
 import classes from "./classes.module.css";
-import Head from "next/head" 
+import Head from "next/head";
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
