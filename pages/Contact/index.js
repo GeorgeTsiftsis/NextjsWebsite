@@ -7,6 +7,7 @@ import TimeScedule from "../../components/TimeScedule/index";
 import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import TelContact from "../../components/TelContact";
 import classes from "./classes.module.css";
+import Head from "next/head" 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -21,6 +22,11 @@ const SimpleMap = (props) => {
 
   {
     return (
+      <>
+      <Head>
+      <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Επικοινωνία </title>
+      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      </Head>
       <motion.section style={{ backgroundColor: "#6096ba" }} initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
         <HorizontalLine title={"ΠΛΗΡΟΦΟΡΙΕΣ"} />
         <div className={classes.container_details_contact}>
@@ -43,6 +49,7 @@ const SimpleMap = (props) => {
           </GoogleMapReact>
         </div>
       </motion.section>
+      </>
     );
   }
 };

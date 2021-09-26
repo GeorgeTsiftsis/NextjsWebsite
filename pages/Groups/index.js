@@ -3,6 +3,7 @@ import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/Hori
 import firebase from "../../components/util/firebase";
 import GroupList from "../../components/CompGroup/GroupList";
 import { motion } from "framer-motion";
+import Head from 'next/head'
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -13,6 +14,10 @@ const variants = {
 function Groups(props) {
   return (
     <>
+        <Head>
+      <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Τμήματα </title>
+      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      </Head>
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
         <HorizontalLine title={"ΤΜΗΜΑΤΑ"}  />
 

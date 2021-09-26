@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import apostolistelikostoglou from "../../public/whatistkd.jpg";
+import Head from "next/Head";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -18,6 +19,10 @@ function TkdPage(props) {
 
   return (
     <>
+      <Head>
+      <title>Α.Σ. Μακεδονική Δύναμη Κοζάνης Ταε Κβο Ντο </title>
+      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      </Head>
       <motion.section className={classes.cont} initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
         <div>
           <h1 className={classes.title}> {props.object.title}</h1>

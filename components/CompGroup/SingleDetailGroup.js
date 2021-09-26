@@ -1,7 +1,13 @@
-import classes from "../CompStaff/style.module.css";
+import classes from "./style.module.css";
 import { motion } from "framer-motion";
+import Head from 'next/head'
 function SingleDetailGroup(props) {
   return (
+    <>
+    <Head>
+      <title>Α.Σ. Μακεδονική Δύναμη Κοζάνης {props.object.t1} </title>
+      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      </Head>
     <section className={classes.section} >
     <div className={classes.container_biography}>
       <div className={classes.leftcol}>
@@ -84,6 +90,7 @@ function SingleDetailGroup(props) {
       </ul>
 </div>
     </section>
+    </>
   );
 }
 

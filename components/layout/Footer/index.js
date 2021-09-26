@@ -13,13 +13,10 @@ function Footer() {
               <h3>Υπηρεσίες</h3>
               <ul>
                 <li>
-                  <a href="#">Ταε-Κβον-Ντό</a>
+                <Link href="/Groups/1">Ταε-Κβον-Ντό</Link>
                 </li>
                 <li>
-                  <a href="#">Μοντέρνος Χορός</a>
-                </li>
-                <li>
-                  <a href="#">Ελεύθερα Βάρη</a>
+                <Link href="/Groups/2">Μοντέρνος Χορός</Link>
                 </li>
               </ul>
             </div>
@@ -30,11 +27,18 @@ function Footer() {
                   <Link href="/">Αρχική Σελίδα</Link>
                 </li>
                 <li>
+                  <Link href="/History">Ιστορία-Σύλλογος</Link>
+                </li>
+                <li>
                   <Link href="/Groups">Τμήματα</Link>
                 </li>
                 <li>
-                  <Link href="/History">Ιστορία-Σύλλογος</Link>
+                  <Link href="/Contact">Επικοινωνία</Link>
                 </li>
+                <li>
+                  <Link href="/Egkatastaseis-tae-kwon-do">Αίθουσες</Link>
+                </li>
+                
               </ul>
             </div>
 

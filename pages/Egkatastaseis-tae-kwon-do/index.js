@@ -3,6 +3,7 @@ import classes from "./classes.module.css";
 import ImageGallery from "react-image-gallery";
 import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/HorizontalLine";
 import { motion } from "framer-motion";
+import Head from 'next/head';
 
 
 const variants = {
@@ -13,13 +14,16 @@ const variants = {
 
 function EgkatastaseisTaekwondo(props) {
   return (
+    <>
+    <Head>
+      <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Αίθουσες Εγκαταστάσεις </title>
+      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+    </Head>
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-             <HorizontalLine  title={"ΑΙΘΟΥΣΕΣ"}  />
-
-     
-
-      {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba',paddingTop:'3rem' }}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
+    <HorizontalLine  title={"ΑΙΘΟΥΣΕΣ"}  />
+    {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba',paddingTop:'3rem' }}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
     </motion.section>
+    </>
   );
 }
 
