@@ -67,8 +67,20 @@ function SingleDetailGroup(props) {
         <img className= {classes.photodet}  src={props.object.p6} alt={props.object.name}></img>
         <li className= {classes.item}>{props.object.t7}</li>
         </div>
-
-
+        
+        {typeof props.object.p7  !== 'undefined' ? (
+              (<>
+              <div className={classes.divphoto}> 
+                <img className= {classes.photodet}  src={props.object.p7} alt={props.object.name}></img>
+                <li className= {classes.item}>{props.object.t8}</li>
+              </div> 
+              <div className={classes.divphoto}> 
+                <img className= {classes.photodet}  src={props.object.p8} alt={props.object.name}></img>
+                <li className= {classes.item}>{props.object.t9}</li>
+              </div> 
+               </>
+                                   )  ) : ""
+                  }
       </ul>
 </div>
     </section>
@@ -76,4 +88,5 @@ function SingleDetailGroup(props) {
 }
 
 export default SingleDetailGroup;
+
 
