@@ -1,6 +1,7 @@
 import { useState } from "react";
 import classes from "../../pages/Staff/style.module.css";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 function StaffList(props) {
   const [isShowing, setIsShowing] = useState(true);
@@ -74,6 +75,10 @@ function StaffList(props) {
   );
   return (
     <>
+    <Head>
+      <title>Α.Σ. Μακεδονική Δύναμη Κοζάνης Προσωπικό</title>
+      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      </Head>
       <div>{staffList}</div>
     </>
   );
