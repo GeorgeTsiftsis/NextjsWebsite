@@ -9,7 +9,7 @@ function SingleDetailGroup(props) {
         <h1 className={classes.title}>{props.object.name}</h1>
         <span className={classes.line}> </span>
         </div>
-        <p className={classes.role}> {props.object.role} </p>
+        
         <div className={classes.data} > 
         <p className={classes.description}> {props.object.description} </p>
         <motion.ul dangerouslySetInnerHTML={{__html:props.object["all"]}} initial="hidden" animate="visible" variants={{
@@ -40,6 +40,7 @@ function SingleDetailGroup(props) {
       <h1 className={classes.title}>{props.object.t1} 
       </h1>
       <span className={classes.line}></span>
+      <p className={classes.role}> {props.object.role} </p>
       <ul className= {classes.lista}>
         <div className={classes.divphoto}> 
         <img className= {classes.photodet}  src={props.object.p1} alt={props.object.name}></img>
