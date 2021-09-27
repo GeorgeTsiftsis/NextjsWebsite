@@ -9,7 +9,7 @@ function StaffList(props) {
 
   const [appState, changeState] = useState({
     activeObject: null,
-    objects: [props.staffMembers[0], props.staffMembers[1], props.staffMembers[2], props.staffMembers[3], props.staffMembers[4]],
+    objects: [props.staffMembers[0], props.staffMembers[1], props.staffMembers[2], props.staffMembers[3], props.staffMembers[4], props.staffMembers[5], props.staffMembers[6], props.staffMembers[7], props.staffMembers[8]],
   });
 
   function toggleActive(index) {

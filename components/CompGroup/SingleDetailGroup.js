@@ -14,6 +14,26 @@ function SingleDetailGroup(props) {
         <div className={classes.divtitle}> 
         <h1 className={classes.title}>{props.object.name}</h1>
         <span className={classes.line}> </span>
+        {typeof props.object.nameInside  !== 'undefined' ? (
+  (    <div className={classes.data} >
+    <motion.ul dangerouslySetInnerHTML={{__html:props.object["nameInside"]}}  initial="hidden" animate="visible" variants={{
+    hidden: {
+      scale: .8,
+      opacity: 0
+    },
+    visible: {
+    scale: 1,
+    opacity:1,
+    transition: {
+      delay: .8
+    }
+  }
+  }} className= {classes.list}>
+ </motion.ul>
+   </div>
+                       )  ) : ""
+      }
+        <span className={classes.line}> </span>
         </div>
         
         <div className={classes.data} > 
@@ -95,5 +115,6 @@ function SingleDetailGroup(props) {
 }
 
 export default SingleDetailGroup;
+
 
 
