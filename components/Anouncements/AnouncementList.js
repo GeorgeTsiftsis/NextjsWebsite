@@ -20,7 +20,7 @@ function AnouncementList(props) {
 
   return (
     <>
-      <HorizontalLine title={"ΑΝΑΚΟΙΝΩΣΕΙΣ"}  />
+      <HorizontalLine title={"ΑΝΑΚΟΙΝΩΣΕΙΣ-ΔΡΑΣΕΙΣ"}  />
 
       <section className={classes.section}>
         <div className={classes.gridnews}>{anouncementsList}</div>
