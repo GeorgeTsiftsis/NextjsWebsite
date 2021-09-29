@@ -1,7 +1,7 @@
 import classes from "./Whatis.module.css";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import apostolistelikostoglou from "../../public/homeapostolis(1).jpg";
+// import apostolistelikostoglou from "../../public/homeapostolis(1).jpg";
 function Whatis(props) {
   const router = useRouter();
   function showDetailsHandler() {
@@ -17,7 +17,7 @@ function Whatis(props) {
         </span>
       </div>
 
-      <Image className={classes.photo} src={apostolistelikostoglou} alt="apostolistelikostoglou"></Image>
+      {/* <Image className={classes.photo} src={apostolistelikostoglou} alt="apostolistelikostoglou"></Image> */}
     </section>
   );
 }
