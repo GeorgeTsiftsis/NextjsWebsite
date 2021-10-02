@@ -1,11 +1,13 @@
 import React from "react";
 import classes from "./Anouncements.module.css";
 import Link from "next/link";
+import Image from "next/image" 
 
 export default function AnouncementItem(props) {
   return (
     <section className={classes.single_box_of_anouncements} key={props.anouncement.id}>
-      <img className={classes.photo1} src={props.anouncement.photo} alt={props.anouncement.title}></img>
+      <Image width={200}
+      height={300}className={classes.photo1} src={props.anouncement.photo} alt={props.anouncement.title}></Image>
       <div className={classes.texts_of_anouncements}>
         <h1 className={classes.title}> {props.anouncement.title}</h1>
         <p className={classes.date_of_anouncements}> {props.anouncement.date}</p>
