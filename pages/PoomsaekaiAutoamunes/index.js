@@ -16,7 +16,7 @@ function index(props) {
     <>
     <Head>
       <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Τμήματα Poomsae και Αυτοάμυνας </title>
-      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      <meta name="description" content="Τμήματα πουμσε poomsae και αυτοάμυνας στην Μακεδονική Δύναμη Κοζάνης." />
     </Head>
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
     <HorizontalLine title={"Τμήματα Poomsae και Αυτοάμυνας"}  />

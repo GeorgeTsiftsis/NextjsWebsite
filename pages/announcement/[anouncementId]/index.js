@@ -3,6 +3,7 @@ import React from "react";
 import firebase from "../../../components/util/firebase";
 import OldAnouncementList from "../../../components/Anouncements/OldAnouncementList";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -59,13 +60,18 @@ export async function getStaticProps({ params }) {
 }
 
 function AnouncementDetails(props) {
-  return (
+  return (<>  
+     <Head>
+    <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Ανακοινώσεις και Δράσεις Συλλόγου</title>
+    <meta name="description" content="Ανακοινώσεις και Δράσεις Συλλόγου για Μοντέρνο Χορό και Ταε-Κβον-Ντο" />
+  </Head>
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
       <div style={{ display: "flex", justifyItems: "center", alignItems: "center", flexDirection: "column" }}>
         <SingleAnouncement anouncement={props.anouncement} />
         <OldAnouncementList anouncements={props.anouncements} />
       </div>
     </motion.section>
+    </>
   );
 }
 

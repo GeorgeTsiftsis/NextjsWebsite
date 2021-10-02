@@ -16,7 +16,7 @@ function index(props) {
     <>
     <Head>
       <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Αίθουσες Αθλητικός και Μοντέρνος Χορός </title>
-      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      <meta name="description" content="Τμήματα Αθλητικού και Μοντέρνου Χορού παιδιά" />
     </Head>
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
     <HorizontalLine title={"Αθλητικός και Μοντέρνος Χορός"}  />

@@ -25,10 +25,10 @@ const SimpleMap = (props) => {
       <>
       <Head>
       <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Επικοινωνία </title>
-      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      <meta name="description" content="Πληροφοριες Επικοινωνίας για την Μακεδονικη Δύναμη Κοζάνης" />
       </Head>
       <motion.section style={{ backgroundColor: "#6096ba" }} initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-        <HorizontalLine title={"ΠΛΗΡΟΦΟΡΙΕΣ"} />
+        <HorizontalLine title={"Πληροφορίες"} />
         <div className={classes.container_details_contact}>
           <p className={classes.text_details}>
             Η έδρα του συλλόγου βρίσκεται επί της οδού Εστίας 3, ΤΚ 50131 Κοζάνη. Επικοινωνήστε μαζί μας για οποιαδήποτε πληροφορία/απορία μέσω της παρακάτω ηλεκτρονικής φόρμας ή να μας καλέσετε στο <strong style={{ display: "block" }}>Σταθερό: 24610 25054</strong> <strong> Κινητό: 6946504020</strong>.

@@ -16,10 +16,10 @@ function Groups(props) {
     <>
         <Head>
       <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Τμήματα </title>
-      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      <meta name="description" content="Όλα τα τμήματα του Αθλητικού Συλλόγου Ταε-Κβον-Ντο και Συγχρόνος Χορός με Ρυθμική και αερόβια Γυμναστική." />
       </Head>
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-        <HorizontalLine title={"ΤΜΗΜΑΤΑ"}  />
+        <HorizontalLine title={"Τμήματα"}  />
 
         <GroupList GroupMembers={props.GroupMembers} key={props.id} />
       </motion.section>

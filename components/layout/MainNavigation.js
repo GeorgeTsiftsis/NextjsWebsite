@@ -89,7 +89,7 @@ const MainHeader = () => {
           </div>
         </nav>
       </header>
-      <OwnImage src="/makdin2.jpg" layout="fill" alt="makedoniki-dinami-logo"></OwnImage>
+      <OwnImage src="/makedonikidinami.jpg" layout="fill" alt="makedoniki-dinami-logo"></OwnImage>
     </>
   );
 };

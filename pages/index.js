@@ -22,7 +22,7 @@ function Homepage(props) {
        
       </Head>
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-        <MainInformation />
+        <MainInformation history={props.history} />
         <Counter />
         <AnouncementList anouncements={props.anouncements} />
         <Whatis object={props.object} />
@@ -51,3 +51,5 @@ export async function getServerSideProps(context) {
     },
   };
 }
+
+

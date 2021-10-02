@@ -1,8 +1,8 @@
 import classes from "./style.module.css";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-// import Image from "next/image";
-// import apostolistelikostoglou from "../../public/whatistkd.jpg";
+import Image from "next/image";
+// import apostolistelikostoglou from "../../public/homeapostolis(1).jpg";
 import Head from "next/head";
 
 const variants = {
@@ -28,7 +28,7 @@ function TkdPage(props) {
           <h1 className={classes.title}> {props.object.title}</h1>
           <h2 className={classes.description}>{props.object.description}</h2>
         </div>
-        {/* <Image className={classes.photo} src={apostolistelikostoglou} alt="apostolistelikostoglou"></Image> */}
+        <img className={classes.photo} src="/homeapostolis(1).jpg" alt="apostolistelikostoglou"></img>
       </motion.section>
       <section className={classes.cont2}>
         <h2 className={classes.description2}>{props.object.description1}</h2> <h2 className={classes.description2}>{props.object.description2}</h2>

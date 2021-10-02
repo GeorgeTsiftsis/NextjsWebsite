@@ -2,6 +2,7 @@ import classes from "./style.module.css";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Link from 'next/link'
 // import Button from "../../components/Button/index";
 
 function SingleDetailGroup(props) {
@@ -35,7 +36,7 @@ function SingleDetailGroup(props) {
     <>
     <Head>
       <title>Α.Σ. Μακεδονική Δύναμη Κοζάνης {props.object.t1} </title>
-      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      <meta name="description" content="Πληροφορίες Τμήματων Τάε-Κβον-Ντο και Μοντέρνου Χορού" />
       </Head>
     <section className={classes.section} >
     <div className={classes.container_biography}>
@@ -154,10 +155,10 @@ function SingleDetailGroup(props) {
       {typeof props.object.p7  !== 'undefined' ? (
               (<>
               <h1 className={classes.title}>Διακρίσεις Αθλητών</h1>
-      <span className={classes.line}></span>
+                <span className={classes.line}></span>
                       <img className={classes.diakriseis}  src={props.object.pdiakriseis} alt={props.object.name}></img>
                       <h2 className={classes.diakriseisText}>Παρακάτω μπορείτε να δείτε τις διακρίσεις του συλλόγου μας ως μέλη της εθνικής ομάδος της χώρας μας</h2>
-                      <button> Pata edw </button>
+                      <button className={classes.button}> <Link href="/DiakriseisAthltitwn">  Δείτε Περισσότερα  </Link> </button>
  </> ) ) : ""
       }
 

@@ -2,6 +2,7 @@ import HorizontalLine from "../../components/HorizontalLines/HorizontalLine/Hori
 import firebase from "../../components/util/firebase";
 import StaffList from "../../components/CompStaff/StaffList";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -10,10 +11,17 @@ const variants = {
 };
 function Staff(props) {
   return (
+    <>
+ <Head>
+      <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Προσωπικό </title>
+      <meta name="description" content="Μακεδονική Δύναμη Κοζάνης Προσωπικό" />
+    </Head>
+    
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-      <HorizontalLine title={"ΠΡΟΣΩΠΙΚΟ"} />
+      <HorizontalLine title={"Προσωπικό"} />
       <StaffList staffMembers={props.staffMembers} key={props.id} />
     </motion.section>
+    </>
   );
 }
 export default Staff;

@@ -17,7 +17,7 @@ function Whatis(props) {
         </span>
       </div>
 
-      {/* <Image className={classes.photo} src={apostolistelikostoglou} alt="apostolistelikostoglou"></Image> */}
+      <img className={classes.photo} src="/homeapostolis(1).jpg" alt="apostolistelikostoglou"></img>
     </section>
   );
 }

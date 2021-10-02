@@ -17,10 +17,10 @@ function EgkatastaseisTaekwondo(props) {
     <>
     <Head>
       <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Αίθουσες Εγκαταστάσεις </title>
-      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      <meta name="description" content="Αίθουσες και Εγκαταστάσεις στον αθλητικό σύλλογο Μακεδονικη Δύναμη Κοζάνης " />
     </Head>
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
-    <HorizontalLine  title={"ΑΙΘΟΥΣΕΣ"}  />
+    <HorizontalLine  title={"Αίθουσες"}  />
     {props.galleryphotos === undefined ? <h1>Oh no</h1> : <div style={{backgroundColor:'#6096ba',paddingTop:'3rem' }}> <ImageGallery className={classes.broken}  lazyLoad={true}  showBullets={true} showThumbnails={true} items={props.galleryphotos}  /> </div>}
     </motion.section>
     </>
