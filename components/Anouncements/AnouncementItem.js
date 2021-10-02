@@ -6,7 +6,7 @@ import Image from "next/image"
 export default function AnouncementItem(props) {
   return (
     <section className={classes.single_box_of_anouncements} key={props.anouncement.id}>
-      <Image width='100%'
+      <Image width={300}
       height={400}className={classes.photo1} src={props.anouncement.photo} alt={props.anouncement.title}></Image>
       <div className={classes.texts_of_anouncements}>
         <h1 className={classes.title}> {props.anouncement.title}</h1>
