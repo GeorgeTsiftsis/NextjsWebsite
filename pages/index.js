@@ -25,7 +25,7 @@ function Homepage(props) {
         <MainInformation history={props.history} />
         <Counter />
         <AnouncementList anouncements={props.anouncements} />
-        <Whatis object={props.object} />
+        {/* <Whatis object={props.object} /> */}
         {/* <FormforContact /> */}
       </motion.section>
     </>
