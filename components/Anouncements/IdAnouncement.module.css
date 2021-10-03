@@ -1,18 +1,22 @@
 .SingleAnouncement {
-  max-width: 1000px;
+  max-width: 1200px;
   background-color: #6096ba;
   color:white;
   font-family: "Manrope", sans-serif;
+  width: 100%;
+ 
+
 
   
 }
 
 .divphoto {
-  border-left: none;
-  margin-bottom: 5rem;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:100%;
+  
 }
 
 .title {
@@ -32,8 +36,11 @@
 .photo {
 
   padding: 1rem;
- height:300px;
-  width: auto;
+  /* height:300px; */
+  /* width:300px; */
+  max-width: 600px;
+  border-radius:16px;
+  
 }
 
 .date_of_anouncements {
@@ -64,5 +71,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    
   }
+  .photo {
+    width:100%;
+  }
+}
+.fb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
