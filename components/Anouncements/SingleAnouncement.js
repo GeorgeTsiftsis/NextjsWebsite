@@ -21,8 +21,8 @@ function SingleAnouncement(props) {
         <p className={classes.description}> {props.anouncement.full_description}</p>
         <FacebookShareButton
   url={`https://nextjs-website-2s6b4p7cx-georgetsiftsis.vercel.app/announcement/${props.anouncement.id}`}
-  quote={'next-share is a social share buttons for your next React apps.'}
-  hashtag={'#nextshare'}
+  quote={props.anouncement.title}
+  
 >
   <FacebookIcon size={32} round />
 </FacebookShareButton>
