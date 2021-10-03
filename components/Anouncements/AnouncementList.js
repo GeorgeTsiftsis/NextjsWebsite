@@ -8,7 +8,7 @@ function AnouncementList(props) {
 
   function handleClick(e) {
     e.preventDefault();
-    setPostNum((prevPostNum) => prevPostNum + 2);
+    setPostNum((prevPostNum) => prevPostNum + 3);
   }
 
   const anouncementsList = props.anouncements
