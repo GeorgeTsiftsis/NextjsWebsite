@@ -12,7 +12,7 @@ function AnouncementList(props) {
   }
 
   const anouncementsList = props.anouncements
-    .reverse()
+    // .reverse()
     .slice(0, postNum)
     .map(function (anouncement) {
       return <AnouncementItem anouncement={anouncement} key={anouncement.id} />;

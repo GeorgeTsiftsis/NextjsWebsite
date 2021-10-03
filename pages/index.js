@@ -35,7 +35,7 @@ function Homepage(props) {
 export default Homepage;
 
 export async function getServerSideProps(context) {
-  const anouncements = [];
+  var anouncements = [];
 
   const response = await firebase
     .database()
@@ -45,7 +45,7 @@ export async function getServerSideProps(context) {
         anouncements.push(child.val());
       });
     });
-
+    anouncements = anouncements.reverse()
   return {
     props: {
       anouncements,
