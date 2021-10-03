@@ -58,6 +58,12 @@
   }
 
   @media (max-width: 600px) {
-    .text_introlist{letter-spacing: -1px;
-    }
+    .text_intro{
+      text-align: justify;
+      word-break: break-all;
+ 
+  }
+  .text_introlist {
+    word-break: break-all;
+  } 
    }
