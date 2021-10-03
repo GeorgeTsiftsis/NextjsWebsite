@@ -24,7 +24,7 @@ function SingleAnouncement(props) {
         </div>
    
       <div className={classes.fb}>
-        <FacebookShareButton url={`https://nextjs-website-hmbsrp9yr-georgetsiftsis.vercel.app/announcement/${props.anouncement.id}`}
+        <FacebookShareButton url={`https://nextjs-website-q6rkew70d-georgetsiftsis.vercel.app/announcement/${props.anouncement.id}`}
   quote={props.anouncement.title}
   
 >
