@@ -44,7 +44,7 @@ export async function getStaticProps({ params }) {
   await firebase
     .database()
     .ref("Todo")
-    .limitToFirst(3)
+    .limitToLast(3)
     .once("value", (snapshot) => {
       snapshot.forEach((child) => {
         anouncements.push(child.val());
