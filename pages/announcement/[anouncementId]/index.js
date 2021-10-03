@@ -62,8 +62,9 @@ export async function getStaticProps({ params }) {
 function AnouncementDetails(props) {
   return (<>  
      <Head>
-    <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Ανακοινώσεις και Δράσεις Συλλόγου</title>
-    <meta name="description" content="Ανακοινώσεις και Δράσεις Συλλόγου για Μοντέρνο Χορό και Ταε-Κβον-Ντο" />
+    <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Ανακοινώσεις</title>
+    <meta name="description" content='Α.Σ. Μακεδονική Δύναμη Κοζάνης ανακοινώσεις και δράσεις συλλόγου'
+    />
   </Head>
     <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
       <div style={{ display: "flex", justifyItems: "center", alignItems: "center", flexDirection: "column" }}>

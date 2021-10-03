@@ -3,6 +3,7 @@ import firebase from "../components/util/firebase";
 import MainInformation from "../components/maininfos/Maininformation";
 import Counter from "../components/Counter/counter";
 import Whatis from "../components/Whatis/index";
+
 // import { NextSeo } from "next-seo";
 // import FormforContact from "../components/FormforContact/FormforConract";
 import Head from "next/head";

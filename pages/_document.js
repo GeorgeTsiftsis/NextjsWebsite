@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="el">
         <Head>
+        <link rel="apple-touch-icon" href="/faviconn.ico"/>
           {/* <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" /> */}
         </Head>
