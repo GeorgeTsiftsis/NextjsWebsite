@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   let anouncement;
-  let anouncements = [];
+  var anouncements = [];
   await firebase
     .database()
     .ref("Todo/" + params.anouncementId)
@@ -50,7 +50,7 @@ export async function getStaticProps({ params }) {
         anouncements.push(child.val());
       });
     });
-
+    // anouncements = anouncements.reverse()
   return {
     props: {
       anouncement,
