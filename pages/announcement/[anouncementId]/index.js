@@ -50,7 +50,7 @@ export async function getStaticProps({ params }) {
         anouncements.push(child.val());
       });
     });
-    // anouncements = anouncements.reverse()
+    anouncements = anouncements.reverse()
   return {
     props: {
       anouncement,
