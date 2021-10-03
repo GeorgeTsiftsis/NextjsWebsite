@@ -19,6 +19,8 @@
   font-family: "Manrope", sans-serif;
   color: white;
   text-align: justify;
+  
+  word-break: break-all;
 }
 .read_more {
   font-size: 20px;
