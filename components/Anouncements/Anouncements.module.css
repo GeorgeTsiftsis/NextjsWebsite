@@ -73,8 +73,12 @@
 
 .description {
   max-width: 500px;
-  justify-content: center;
-  justify-items: center;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  
 }
 
 @media (max-width: 1285px) {

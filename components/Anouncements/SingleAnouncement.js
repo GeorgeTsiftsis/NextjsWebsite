@@ -20,7 +20,7 @@ function SingleAnouncement(props) {
       <div className={classes.divphoto}>
         <img className={classes.photo} src={props.anouncement.photo} alt={props.anouncement.title}></img>
         </div> 
-        <p className={classes.description}> {props.anouncement.full_description}</p>
+        <p className={classes.description}> {props.anouncement.description}</p>
         </div>
    
       <div className={classes.fb}>
