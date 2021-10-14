@@ -72,7 +72,7 @@ function Footer() {
             </a>
           </div>
           <p className={classes.copyright}>Μακεδονική Δύναμη Κοζάνης © 2021</p>
-        <a target="_blank" rel="noopener noreferrer" href='gtsif.com' className={classes.developedby}  >Developed by George Tsiftsis</a> 
+        <a target="_blank" rel="noopener noreferrer" href="https://www.gtsif.com" className={classes.developedby}  >Developed by George Tsiftsis</a> 
         </div>
       </footer>
     </div>
