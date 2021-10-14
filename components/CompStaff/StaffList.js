@@ -46,7 +46,7 @@ function StaffList(props) {
             }}
           >
             <div className={`${classes.card__image_holder}`}>
-              <img className={classes.card__image} src={element.photo} alt="wave" />
+              <img className={classes.card__image} src={element.photo} alt={element.name} />
             </div>
             <div className={`${classes.card_title}`}>
               <a href="#" className={`${classes.toggle_info} ${classes.btn}`} onClick={handleClick}>
@@ -77,7 +77,7 @@ function StaffList(props) {
     <>
     <Head>
       <title>Α.Σ. Μακεδονική Δύναμη Κοζάνης Προσωπικό</title>
-      <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
+      <meta name="description" content="Αθλητικό προσωπικο Μακεδονική Δύναμη Κοζάνης" />
       </Head>
       <div>{staffList}</div>
     </>

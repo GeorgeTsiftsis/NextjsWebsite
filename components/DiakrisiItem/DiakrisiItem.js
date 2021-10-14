@@ -7,7 +7,8 @@ function DiakrisiItem(props) {
             <p className={classes.locationYear}> {props.diakrisi.locationYear}</p>
             <div className={classes.divImages}>
             <img className={classes.img1}  src={props.diakrisi.img1} alt={props.diakrisi.name}></img>
-            <img className={classes.img1}  src={props.diakrisi.img2} alt={props.diakrisi.name}></img>
+            {typeof props.diakrisi.img2  !== 'undefined' ? (
+          (     <img className={classes.img1}  src={props.diakrisi.img2} alt={props.diakrisi.name}></img> )) : "" }
             {typeof props.diakrisi.img3  !== 'undefined' ? (
           (     <img className={classes.img1}  src={props.diakrisi.img3} alt={props.diakrisi.name}></img> )) : "" }
            

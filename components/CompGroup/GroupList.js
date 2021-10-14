@@ -45,7 +45,7 @@ function GroupList(props) {
             }}
           >
             <div className={`${classes.card__image_holder}`}>
-              <img className={classes.card__image} src={element.photo} alt="wave" />
+              <img className={classes.card__image} src={element.photo} alt={element.name} />
             </div>
             <div className={`${classes.card_title}`}>
               <a href="#" className={`${classes.toggle_info} ${classes.btn}`} onClick={handleClick}>
