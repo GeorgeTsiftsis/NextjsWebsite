@@ -16,7 +16,7 @@ function Footer() {
                 <Link href="/Groups/1">Ταε-Κβον-Ντό</Link>
                 </li>
                 <li>
-                <Link href="/Groups/2">Μοντέρνος Χορός</Link>
+                <Link href="/Groups/2">Χορός</Link>
                 </li>
               </ul>
             </div>

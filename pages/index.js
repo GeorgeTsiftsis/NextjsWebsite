@@ -20,7 +20,6 @@ function Homepage(props) {
       <Head>
         <title> Α.Σ. Μακεδονική Δύναμη Κοζάνης Ταε-Κβο-Ντο</title>
         <meta name="description" content="Χώρος εκγύμνασης για σας αλλά και για τα παιδιά σας με ασφάλεια. Αθλητικός Σύλλογος Μαθημάτων Ταε-Κβον-Ντο Συγχρόνος Χορός Ρυθμική και αερόβια Γυμναστική." />
-       
       </Head>
       <motion.section initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ type: "linear" }}>
         <MainInformation history={props.history} />
