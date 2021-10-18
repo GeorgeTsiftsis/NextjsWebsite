@@ -36,7 +36,7 @@ function SingleDetailGroup(props) {
     <>
     <Head>
       <title>Α.Σ. Μακεδονική Δύναμη Κοζάνης {props.object.t1} </title>
-      <meta name="description" content="Πληροφορίες Τμήματων Τάε-Κβον-Ντο και Μοντέρνου Χορού" />
+      <meta name="description" content="Πληροφορίες Τμήματων Τάε-Κβον-Ντο Ρυθμικης Ενόργανης Γυμναστικής Μπαλέτου και Χορού" />
       </Head>
     <section className={classes.section} >
     <div className={classes.container_biography}>
