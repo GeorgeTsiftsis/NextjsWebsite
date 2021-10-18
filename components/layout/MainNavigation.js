@@ -77,7 +77,6 @@ const MainHeader = () => {
               ))}
             </ul>
 
-            {/* <NavLinksItemsFun NavBarItems={NavBarItems} /> */}
           </div>
           <div className={classes.socialmediacontainer}>
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100063686376902" style={{ padding: 5 }}>

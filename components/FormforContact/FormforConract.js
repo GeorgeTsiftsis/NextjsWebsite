@@ -43,12 +43,6 @@ function FormforContact() {
             <h1 className={`${classes.message_title}`}>Στειλτε μήνυμα</h1>
 
             <form className={classes.form} onSubmit={handleSubmit}>
-              {/* // action="mailto:gtsiff@gmail.com" method="post" enctype="text/plain"> */}
-              {/* <label for="subject" className={`${classes.subject} ${classes.label}`}>
-            Subject
-          </label>
-          <input type="text" name="subject" maxlength="45" /> */}
-
               <label htmlFor="message" className={`${classes.message} ${classes.label}`}>
                 Μήνυμα
               </label>
@@ -56,7 +50,6 @@ function FormforContact() {
 
               <label htmlFor="name" className={`${classes.name} ${classes.label}`}>
                 Όνομα
-                {/* <!-- keep <p> on next line to keep a letter space for mobile version --> */}
                 <p className={classes.break}>(Προαιρετικό)</p>
               </label>
               <input className={`${classes.first_name} ${classes.input}`} type="text" /*name="first-name"*/ placeholder="Όνομα" maxLength="20" /*value={name}*/ onChange={(e) => setName(e.target.value)} />
@@ -64,8 +57,6 @@ function FormforContact() {
 
               <label htmlFor="email" className={`${classes.email} ${classes.label}`}>
                 Email
-                {/* <!-- keep <b> on next line to keep a letter space for mobile version --> */}
-                {/* <p className={classes.break}>(Optional)</p> */}
               </label>
               <input className={`${classes.email} ${classes.input}`} type="email" /*name="email"*/ placeholder="example@email.com" /*value={email}*/ onChange={(e) => setEmail(e.target.value)} />
 

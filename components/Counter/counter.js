@@ -74,24 +74,3 @@ export default function Counter() {
     // </Mycounter>
   );
 }
-
-// return (
-//   <div>
-//     <CountUp start={focus ? 0 : null} end={100} duration={3} redraw={true}>
-//       {({ countUpRef }) => (
-//         <div>
-//           <span ref={countUpRef} />
-//           <VisibilitySensor
-//             onChange={(isVisible) => {
-//               if (isVisible) {
-//                 setFocus(true);
-//               }
-//             }}
-//           >
-//             <a>Πανελλήνιες Διακρίσεις</a>
-//           </VisibilitySensor>
-//         </div>
-//       )}
-//     </CountUp>
-//   </div>
-// );

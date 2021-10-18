@@ -12,8 +12,6 @@ function Diakriseis(props) {
       <img className={classes.image} alt="Διακρίσεις Μακεδονικής Δύναμης" src="/DiakriseisAthlitwn.jpg"></img>
 <h2 className={classes.title2}>Παγκόσμιες Διακρίσεις</h2>
 <span className={classes.line}></span>
-
-{/* <p><span> Αργυρό Παγκόσμιο Μάνστεστερ 2019</span></p> */}
        <div> {diakriseisList}</div> </div>
     )
 }
