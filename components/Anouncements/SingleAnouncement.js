@@ -9,8 +9,8 @@ function SingleAnouncement(props) {
   return (
     <>
      <Head>
-      <title>Ανακοινώσεις του Α.Σ. Μακεδονική Δύναμη Κοζάνης</title>
-      <meta name="description" content={props.anouncement.title} />
+      <title>{props.anouncement.title}</title>
+      <meta name="description" content={props.anouncement.description} />
       </Head>
     <div className={classes.SingleAnouncement}>
       
@@ -24,9 +24,9 @@ function SingleAnouncement(props) {
         </div>
    
       <div className={classes.fb}>
-        <FacebookShareButton url={`https://nextjs-website-git-alo-georgetsiftsis.vercel.app/announcement/${props.anouncement.id}`}
+        <FacebookShareButton url={`https://makedonikidinami.gr/announcement/${props.anouncement.id}`}
   quote={props.anouncement.title}
-  
+
 >
   <FacebookIcon size={40} round />
 </FacebookShareButton> 
