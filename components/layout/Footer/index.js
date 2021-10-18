@@ -67,7 +67,7 @@ function Footer() {
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100063686376902" style={{ padding: 5 }}>
               <FaFacebook className={classes.fab} />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/macedonian_force/" style={{ padding: 5 }}>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/makedoniki_dinami/" style={{ padding: 5 }}>
               <FaInstagram className={classes.fab} />
             </a>
           </div>
