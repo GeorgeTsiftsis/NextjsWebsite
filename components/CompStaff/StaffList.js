@@ -62,9 +62,11 @@ function StaffList(props) {
               <div className={classes.card_description}>{element.description}</div>
               <div className={`${classes.card_flap} ${classes.flap2}`}>
                 <div className={classes.card_actions}>
-                  <a className={classes.btn} onClick={showDetailsHandler}>
-                    Read more
-                  </a>
+                  
+                  {typeof element.readMore  !== 'undefined' ? (
+          (    <a className={classes.btn} onClick={showDetailsHandler}>
+            {element.readMore}
+           </a> )) : "" }
                 </div>
               </div>
             </div>
