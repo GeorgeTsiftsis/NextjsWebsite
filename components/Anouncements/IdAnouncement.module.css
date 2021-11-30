@@ -1,22 +1,16 @@
 .SingleAnouncement {
   max-width: 1200px;
   background-color: #6096ba;
-  color:white;
+  color: white;
   font-family: "Manrope", sans-serif;
   width: 100%;
- 
-
-
-  
 }
 
 .divphoto {
- 
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:100%;
-  
+  width: 100%;
 }
 
 .title {
@@ -27,6 +21,7 @@
 
 .anouncements_title {
   text-align: center;
+
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 200;
@@ -34,13 +29,11 @@
 }
 
 .photo {
-
   padding: 1rem;
   /* height:300px; */
   /* width:300px; */
   max-width: 600px;
-  border-radius:16px;
-  
+  border-radius: 16px;
 }
 
 .date_of_anouncements {
@@ -72,13 +65,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    
   }
   .photo {
-    width:100%;
+    width: 100%;
   }
 }
-.fb{
+.fb {
   display: flex;
   flex-direction: column;
   align-items: center;
