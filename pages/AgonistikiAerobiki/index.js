@@ -15,7 +15,6 @@ function index(props) {
     <>
       <Head>
         <title>
-          {" "}
           Α.Σ. Μακεδονική Δύναμη Κοζάνης Αίθουσες Αγωνιστική Αεροβική{" "}
         </title>
         <meta
@@ -35,13 +34,12 @@ function index(props) {
           <h1>Oh no</h1>
         ) : (
           <div style={{ backgroundColor: "#6096ba", paddingTop: "3rem" }}>
-            {" "}
             <ImageGallery
               lazyLoad={true}
               showBullets={true}
               showThumbnails={true}
               items={props.mousikokinitikiphotos}
-            />{" "}
+            />
           </div>
         )}
       </motion.section>
