@@ -21,7 +21,6 @@ const SimpleMap = (props) => {
   });
   const [zoom, setZoom] = useState(16);
   const defaultOptions = { scrollwheel: false };
-  const api_key = process.env.CUSTOMKEY;
 
   {
     return (
@@ -63,7 +62,7 @@ const SimpleMap = (props) => {
           <div style={{ height: "400px", width: "100%", padding: "1rem" }}>
             <GoogleMapReact
               bootstrapURLKeys={{
-                key: `${api_key}`,
+                key: process.env.NEXT_PUBLIC_API_KEY,
               }}
               defaultCenter={center}
               defaultZoom={zoom}
