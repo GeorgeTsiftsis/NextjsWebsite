@@ -10,6 +10,7 @@ if (!firebase.apps.length) {
     databaseURL:
       "https://initialise-6d68a-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: process.env.PROJECTID,
+    storageBucket: "initialise-6d68a.appspot.com",
     messagingSenderId: process.env.MESSAGINSENDERID,
     appId: process.env.APPID,
     measurementId: process.env.MEASUREMENTID,
