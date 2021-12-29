@@ -14,12 +14,12 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 },
 };
 
-const SimpleMap = (props) => {
-  const [center, setCenter] = useState({
+const SimpleMap = () => {
+  const center = {
     lat: 40.3006998281867,
     lng: 21.78543607992064,
-  });
-  const [zoom, setZoom] = useState(16);
+  };
+  const zoom = 16;
   const defaultOptions = { scrollwheel: false };
 
   {
@@ -69,8 +69,8 @@ const SimpleMap = (props) => {
               defaultOptions={defaultOptions}
             >
               <Marker
-                lat={40.3006998281867}
-                lng={21.78543607992064}
+                lat={center.lat}
+                lng={center.lng}
                 name="Εστίας 3, Πάτηστε για οδηγίες"
                 color="red"
               />
