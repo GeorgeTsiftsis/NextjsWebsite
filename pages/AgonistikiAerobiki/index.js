@@ -31,7 +31,7 @@ function index(props) {
       >
         <HorizontalLine title={"Αγωνιστική Αεροβική"} />
         {props.mousikokinitikiphotos === undefined ? (
-          <h1>Oh no</h1>
+          <h1>Refresh the page</h1>
         ) : (
           <div style={{ backgroundColor: "#6096ba", paddingTop: "3rem" }}>
             <ImageGallery
