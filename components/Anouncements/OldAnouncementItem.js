@@ -21,8 +21,8 @@ export default function OldAnouncementItem(props) {
           {" "}
           {props.anouncement.date}
         </p>
-        {/* <p className={classes.description}> {props.anouncement.description}</p> */}
-        <motion.div
+        <p className={classes.description}> {props.anouncement.description}</p>
+        {/* <motion.div
           dangerouslySetInnerHTML={{
             __html: props.anouncement["description"],
           }}
@@ -42,7 +42,7 @@ export default function OldAnouncementItem(props) {
             },
           }}
           className={classes.description}
-        ></motion.div>
+        ></motion.div> */}
         <Link passHref href={"/announcement/" + props.anouncement.id}>
           <span className={classes.span}>
             <a className={classes.backlink_more_info}>
