@@ -7,7 +7,7 @@ if (!firebase.apps.length) {
   var firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.AUTHDOMAIN,
-    databaseURL: process.env.DATABASEURL,
+    databaseURL: "https://initialise-6d68a-default-rtdb.europe-west1.firebasedatabase.app"
     projectId: process.env.PROJECTID,
     storageBucket: process.env.STORAGEBUCKET,
     messagingSenderId: process.env.MESSAGINSENDERID,
