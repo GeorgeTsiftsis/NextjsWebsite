@@ -33,7 +33,13 @@ export default function Counter() {
             </div>
           )}
         </CountUp>
-        <CountUp className={classes.containerfornumber} start={eur ? 0 : null} end={17} duration={1} redraw={true}>
+        <CountUp
+          className={classes.containerfornumber}
+          start={eur ? 0 : null}
+          end={19}
+          duration={1}
+          redraw={true}
+        >
           {({ countUpRef }) => (
             <div className={classes.containerfornumbera}>
               <span className={classes.number} ref={countUpRef} />
@@ -51,7 +57,13 @@ export default function Counter() {
             </div>
           )}
         </CountUp>
-        <CountUp className={classes.containerfornumber} start={glo ? 0 : null} end={6} duration={1} redraw={true}>
+        <CountUp
+          className={classes.containerfornumber}
+          start={glo ? 0 : null}
+          end={6}
+          duration={1}
+          redraw={true}
+        >
           {({ countUpRef }) => (
             <div className={classes.containerfornumbera}>
               <span className={classes.number} ref={countUpRef} />
