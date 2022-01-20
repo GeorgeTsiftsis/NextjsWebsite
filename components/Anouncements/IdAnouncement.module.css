@@ -75,3 +75,35 @@
   flex-direction: column;
   align-items: center;
 }
+.boxbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+.buttonlink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: rgba(124, 58, 237);
+  background: white;
+  padding: 0.25rem 1rem;
+  border-width: 1px;
+  border-radius: 9999px;
+  --tw-border-opacity: 1;
+  border-color: rgba(221, 214, 254, var(--tw-border-opacity));
+  font-family: inherit;
+  font-size: 1rem;
+
+  cursor: pointer;
+  font-weight: 700;
+}
+.buttonlink:hover {
+  color: white;
+  --tw-bg-opacity: 1;
+  background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+}

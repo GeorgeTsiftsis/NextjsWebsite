@@ -49,7 +49,16 @@ function SingleAnouncement(props) {
             {props.anouncement.description}
           </p> */}
         </div>
-
+        {props.anouncement.url && (
+          <a
+            className={classes.boxbutton}
+            href="https://www.facebook.com/watch/?v=1758644427659432"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className={classes.buttonlink}> Πατήστε εδώ</button>
+          </a>
+        )}
         <div className={classes.fb}>
           <FacebookShareButton
             url={`https://makedonikidinami.gr/announcement/${props.anouncement.id}`}
