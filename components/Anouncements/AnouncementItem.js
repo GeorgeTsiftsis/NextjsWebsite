@@ -43,7 +43,7 @@ export default function AnouncementItem(props) {
         <p className={classes.description}>{props.anouncement.description} </p>
         <Link passHref href={"/announcement/" + props.anouncement.id}>
           <button className={classes.backlink_more_info}>
-            {props.anouncement.readMore}
+          Διαβάστε Περισσότερα
           </button>
         </Link>
       </div>

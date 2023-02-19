@@ -46,7 +46,7 @@ export default function OldAnouncementItem(props) {
         <Link passHref href={"/announcement/" + props.anouncement.id}>
           <span className={classes.span}>
             <a className={classes.backlink_more_info}>
-              {props.anouncement.readMore}
+              Διαβάστε Περισσότερα
             </a>
           </span>
         </Link>
