@@ -19,7 +19,7 @@ export default function AnouncementItem(props) {
       <div className={classes.texts_of_anouncements}>
         <h1 className={classes.title}> {props.anouncement.title}</h1>
         <p className={classes.date_of_anouncements}>{props.anouncement.date}</p>
-        <motion.p
+        <motion.div
           className={classes.description}
           dangerouslySetInnerHTML={{
             __html: props.anouncement["description"],
@@ -39,7 +39,7 @@ export default function AnouncementItem(props) {
               },
             },
           }}
-        ></motion.p>
+        ></motion.div>
         {/* <p className={classes.description}>{props.anouncement.description} </p> */}
         <Link passHref href={"/announcement/" + props.anouncement.id}>
           <button className={classes.backlink_more_info}>
