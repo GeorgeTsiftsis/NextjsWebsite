@@ -2,6 +2,8 @@
   "extends": ["next", "next/core-web-vitals"],
   "rules": {
     // Other rules
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["initial", "exit", "animate", "variants", "transition"] }],
+
   }
 }
