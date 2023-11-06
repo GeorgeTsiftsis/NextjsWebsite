@@ -17,16 +17,19 @@
 //     commonjsOptions: { include: [] },
 //   }
 // });
+module.exports = { images: { domains: ['firebasestorage.googleapis.com'], formats: ['image/avif', 'image/webp'], }, }
 
-module.exports = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: "firebasestorage.googleapis.com",
-        // port: '',
-        // pathname: '/account123/**',
-      },
-    ],
-  },
-}
+
+// module.exports = {
+//   images: {
+//     formats: ['image/avif', 'image/webp'],
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: "firebasestorage.googleapis.com",
+//         port: '',
+//         // pathname: '/account123/**',
+//       },
+//     ],
+//   },
+// }
