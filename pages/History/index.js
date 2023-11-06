@@ -25,8 +25,13 @@ function History(props) {
           content="Η Ιστορία του αθλητικού Συλλόγου Ταε-Κβον-Ντο και μοντέρνου Χορού Ρυθμικής αερόβιας Γυμναστικής."
         />
       </Head>
-      <div
+      <motion.div
         className={classes.containerr}
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ type: "linear" }}
       >
         <HorizontalLine title={"Ιστορία-Σύλλογος"} />
         <p className={classes.text_intro}>
@@ -126,7 +131,7 @@ function History(props) {
         <button onClick={Home} className={classes.button}>
           Επιστροφή στην Αρχική Σελίδα
         </button>
-      </div>
+      </motion.div>
     </>
   );
 }
