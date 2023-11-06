@@ -70,8 +70,8 @@ const MainHeader = () => {
             <ul className={classes.list_ul}>
               {links.map(({ name, href }) => (
                 <li key={name} className={classes.list}>
-                  <Link  href={href}>
-                    <a passhref={href} className={classes.alink} onClick={handleClick}>{name}</a>
+                  <Link  href={href}
+                     passhref={href} className={classes.alink} onClick={handleClick}>{name}
                   </Link>
                 </li>
               ))}
