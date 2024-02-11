@@ -1,15 +1,17 @@
-import NextImage from "next/image";
+import Image from "next/image";
 import styles from "./Image.module.css";
 
-const Image = ({ width, maxWidth, ...rest }) => {
-  let widths = {};
-  width ? (widths["width"] = width) : "100%";
-  maxWidth ? (widths["maxWidth"] = maxWidth) : "100%";
+const renderImage = () => {
+
 
   return (
-    <div className={styles.imageContainer} style={widths}>
-      <NextImage className={styles.image} {...rest} />
-    </div>
+      <Image  
+        src={'/makedonikidinami.jpg'}
+        width={0}
+        height={0}
+        sizes="100vw" 
+        className={styles.image} 
+        alt="makedonikidinami-logo"/>
   );
 };
-export default Image;
+export default renderImage;
